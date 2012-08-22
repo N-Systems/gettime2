@@ -1,0 +1,476 @@
+2012/08/20 22:05:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{{settings}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{settings}}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php (26)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php (194)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php (138)
+2012/08/20 22:05:15 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{settings}}" for active record class "Settings" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#3 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:09:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{{settings}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{settings}}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php (26)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php (194)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php (138)
+2012/08/20 22:09:04 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{settings}}" for active record class "Settings" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#3 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:09:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{{post}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{post}}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php (25)
+in /Users/denisvolkov/Google Drive/bettingtime/index.php (15)
+2012/08/20 22:09:56 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{post}}" for active record class "Post" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php(25): CActiveDataProvider->__construct('Post', Array)
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(276): CController->run('index')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:13:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{{post}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{post}}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php (25)
+in /Users/denisvolkov/Google Drive/bettingtime/index.php (15)
+2012/08/20 22:13:00 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{post}}" for active record class "Post" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php(25): CActiveDataProvider->__construct('Post', Array)
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(276): CController->run('index')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:15:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{{post}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{post}}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php (25)
+in /Users/denisvolkov/Google Drive/bettingtime/index.php (15)
+2012/08/20 22:15:23 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{post}}" for active record class "Post" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php(25): CActiveDataProvider->__construct('Post', Array)
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(276): CController->run('index')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:16:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{settings}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{settings}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php (26)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php (194)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php (138)
+2012/08/20 22:16:12 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{settings}" for active record class "Settings" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#3 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:17:16 [error] [php] include(Settings.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php:418)
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): spl_autoload_call()
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YupeModule->init()
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): YupeModule->__construct()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): createComponent()
+#5 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CWebApplication->getModule()
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): SiteController->init()
+#7 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CWebApplication->run()
+REQUEST_URI=/
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php (194)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php (138)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php (18)
+2012/08/20 22:49:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{{settings}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{settings}}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php (26)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php (194)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php (138)
+2012/08/20 22:49:55 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{settings}}" for active record class "Settings" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#3 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:49:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_bettime.{{settings}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{settings}}`.
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php (26)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php (194)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php (138)
+2012/08/20 22:49:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{settings}}" for active record class "Settings" cannot be found in the database.' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#2 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#3 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/20 22:50:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:50:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/Google Drive/bettingtime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/20 22:52:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.initSql" is not defined.' in /Users/denisvolkov/Google Drive/bettingtime/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(222): CComponent->__set('initSql', Array)
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#6 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:52:20 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.initSql" is not defined.' in /Users/denisvolkov/Google Drive/bettingtime/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(222): CComponent->__set('initSql', Array)
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#6 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/20 22:52:28 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.iniSql" is not defined.' in /Users/denisvolkov/Google Drive/bettingtime/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(222): CComponent->__set('iniSql', Array)
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#6 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:52:28 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.iniSql" is not defined.' in /Users/denisvolkov/Google Drive/bettingtime/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(222): CComponent->__set('iniSql', Array)
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#6 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/20 22:52:35 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.initSQL" is not defined.' in /Users/denisvolkov/Google Drive/bettingtime/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(222): CComponent->__set('initSQL', Array)
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#6 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2012/08/20 22:52:35 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.initSQL" is not defined.' in /Users/denisvolkov/Google Drive/bettingtime/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(222): CComponent->__set('initSQL', Array)
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#3 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#6 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#8 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(91): YupeModule->init()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#12 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(275): YFrontController->init()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/20 22:57:06 [error] [php] Undefined variable: output (/Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/TipsForSale.php:26)
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(127): require()
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(785): SiteController->renderFile()
+#3 /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php(29): SiteController->render()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(287): SiteController->runAction()
+#7 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(276): SiteController->run()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/denisvolkov/Google Drive/bettingtime/index.php(15): CWebApplication->run()
+REQUEST_URI=/
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/TipsForSale.php (26)
+in /Users/denisvolkov/Google Drive/bettingtime/themes/nsystems/views/layouts/main.php (60)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php (29)
+2012/08/20 20:02:38 [info] [application] [c2fa599f271ed78777be777c283f0c9e][admin][83] User: admin (ID: 83)
+
+$_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => '123456',
+  ),
+  'yt0' => 'Войти',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => '6d447d62739b5588cf676088d2a372cd',
+)
+2012/08/20 20:02:39 [info] [application.modules.user] [c2fa599f271ed78777be777c283f0c9e][admin][83] Пользователь admin@admin.ru авторизовался!
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/user/controllers/account/LoginAction.php (16)
+in /Users/denisvolkov/Google Drive/bettingtime/index.php (16)
+2012/08/20 20:07:57 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'c2fa599f271ed78777be777c283f0c9e',
+)
+2012/08/20 20:07:57 [error] [php] Undefined variable: style (/Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/views/tipsarchive.php:15)
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/web/widgets/CWidget.php(244): TipsArchive->renderFile()
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/TipsArchive.php(34): TipsArchive->render()
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(174): TipsArchive->run()
+#3 /Users/denisvolkov/Google Drive/bettingtime/themes/nsystems/views/layouts/main.php(80): SiteController->widget()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(127): require()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(785): SiteController->renderFile()
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php(29): SiteController->render()
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(287): SiteController->runAction()
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#12 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(276): SiteController->run()
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/denisvolkov/Google Drive/bettingtime/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/views/tipsarchive.php (15)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/TipsArchive.php (34)
+in /Users/denisvolkov/Google Drive/bettingtime/themes/nsystems/views/layouts/main.php (80)
+2012/08/20 20:07:59 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'c2fa599f271ed78777be777c283f0c9e',
+)
+2012/08/20 20:07:59 [error] [php] Undefined variable: style (/Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/views/tipsarchive.php:15)
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/web/widgets/CWidget.php(244): TipsArchive->renderFile()
+#1 /Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/TipsArchive.php(34): TipsArchive->render()
+#2 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(174): TipsArchive->run()
+#3 /Users/denisvolkov/Google Drive/bettingtime/themes/nsystems/views/layouts/main.php(80): SiteController->widget()
+#4 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(127): require()
+#5 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#6 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(785): SiteController->renderFile()
+#7 /Users/denisvolkov/Google Drive/bettingtime/protected/controllers/SiteController.php(29): SiteController->render()
+#8 /Users/denisvolkov/Google Drive/bettingtime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#9 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#10 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(287): SiteController->runAction()
+#11 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#12 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(276): SiteController->run()
+#13 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/denisvolkov/Google Drive/bettingtime/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/views/tipsarchive.php (15)
+in /Users/denisvolkov/Google Drive/bettingtime/protected/modules/tips/widgets/TipsArchive.php (34)
+in /Users/denisvolkov/Google Drive/bettingtime/themes/nsystems/views/layouts/main.php (80)
+2012/08/20 20:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blank.gif".' in /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('blank.gif')
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/Google Drive/bettingtime/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/blank.gif
+---
+2012/08/20 20:30:11 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'c2fa599f271ed78777be777c283f0c9e',
+)
+2012/08/20 20:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "recordshttp:".' in /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('recordshttp:')
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/Google Drive/bettingtime/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/recordshttp:/
+---
+2012/08/20 20:30:17 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'c2fa599f271ed78777be777c283f0c9e',
+)
+2012/08/20 20:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r".' in /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/Google Drive/bettingtime/framework/web/CWebApplication.php(135): CWebApplication->runController('r')
+#1 /Users/denisvolkov/Google Drive/bettingtime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/Google Drive/bettingtime/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/r
+---

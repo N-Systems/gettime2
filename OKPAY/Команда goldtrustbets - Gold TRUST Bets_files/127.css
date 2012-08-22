@@ -1,0 +1,217 @@
+/* =Basic styles 
+--------------------------------------------------------------------------------------*/body {
+  font-family: Georgia;
+  font-size: 80%;
+  line-height: 1.4;
+  color: #ffffff;
+}
+a:link {
+  color: #0367e8;
+  text-decoration: underline;
+}
+a:visited {
+  color: #9057aa;
+  text-decoration: underline;
+}
+a:hover {
+  color: #e83303;
+  text-decoration: none;
+}
+/* =Content related 
+--------------------------------------------------------------------------------------*/#content {
+  background: #000000;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: top left;
+  padding: 25px;
+}
+#content-inside {
+  padding: 0 0 0 25px;
+}
+body.nocolumn #content-inside {
+  padding: 0;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4 {
+  font-family: Georgia;
+  margin: 0 0 10px 0;
+}
+#content h1 {
+  font-size: 200%;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: normal;
+  color: #ffffff;
+  padding: 0;
+}
+#content h2, #content h3, #content h4 {
+  color: #ffffff;
+}
+#content h2 {
+  font-size: 140%;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: normal;
+  padding: 10px 0 0 0;
+}
+#content h3 {
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: normal;
+  padding: 0;
+}
+#content h4 {
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: italic;
+  padding: 0;
+}
+#content p {
+  margin: 0 0 0.8em 0;
+}
+#content ul {
+  list-style-type: circle;
+  line-height: 1.4;
+}
+#content li {
+  padding: 0 0 5px 0;
+}
+#content table {
+  border: 1px solid gray;
+}
+#content table td {
+  border: 1px solid gray;
+}
+/* =Sidecolumn
+--------------------------------------------------------------------------------------*//* Container for widgets *//* =Special classes that are supposed to bring/detract attention.
+--------------------------------------------------------------------------------------*//* 
+	Will change text color to less contrast one.
+	Will also be used for messages such as "nothing found" kinda thing. Should provide color contrast at least 4.5 with bg.
+*/#content .textDepreciate {
+  color: #777;
+}
+/* 
+	Will be applied to separators like | line in MLS page.
+	Visually depreciates text more than class above. 
+*/#content .textFade {
+  color: #CCC;
+}
+/* Will change background color of element it is applied to emphasize it visually a bit. */#content .bgHighlight {
+  background: #EFEFEF;
+}
+/* Will be applied to 
+- search results 
+- price on MLS page
+- date on news page */#content .textHighlight {
+  color: green;
+}
+/* =Events Page 
+-----------------------------------------------------------------------------------------*/.calendar table.body td.day {
+  border: 1px;
+}
+.calendar table.body td.day-last, .calendar table.body td.day-first {
+  border-right-width: 1px;
+  border-right-width: 1px;
+}
+/* =Forms & FB validations
+-----------------------------------------------------------------------------------------*/.validator {
+  color: #b80000;
+}
+.validator-summary {
+  background: #fff9d1;
+}
+.validator-summary li {
+  color: #b80000;
+}
+/* =Form Builder & Form fields
+-----------------------------------------------------------------------------------------*/.fb-form .field .description, .hint {
+  color: #777;
+}
+.fb-form .field .fixedDescription {
+  color: #777;
+}
+.fb-form .req {
+  color: #b80000;
+}
+.sf-menu {
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/menubg.png") repeat-x !important;
+  height: 47px;
+  width: 100%;
+}
+.sf-menu > li {
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/menu-devider.png") no-repeat top right;
+  padding-right: 1px !important;
+}
+.sf-menu > li > a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  width: auto;
+  min-width: 100px;
+  height: 47px;
+}
+.sf-menu > li > a > span {
+  display: block;
+  line-height: 39px;
+  padding: 8px 16px 0 16px;
+  text-align: center;
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/link-border.png") no-repeat bottom right;
+}
+* html .sf-menu > li > a:hover {
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/link-hover-bg.png") repeat-x top;
+}
+.sf-menu > li > a:hover, .sf-menu > li:hover > a {
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/link-hover-bg.png") repeat-x top;
+}
+.sf-menu > li > a.activeLink, .sf-menu > li.active > a {
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/link-hover-bg.png") repeat-x top !important;
+  font-weight: bold;
+}
+.sf-menu ul {
+  border: 1px solid #7b727a !important;
+  border-top: none !important;
+  background: #615b61;
+  padding: 17px !important;
+  width: auto !important;
+}
+.sf-menu ul li {
+  width: 142px !important;
+  line-height: 22px !important;
+  text-align: left !important;
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/submenu-li-devider.png") no-repeat left bottom !important;
+}
+.sf-menu ul li.last {
+  background: none !important;
+}
+.sf-menu li ul li a {
+  color: #ffffff !important;
+  text-decoration: none;
+  padding-left: 10px;
+  background: url("//center.redham.ru/clam/elements/navigation/top-highlight-black/frontend/submenu-bullet.png") no-repeat left center !important;
+}
+* html .sf-menu li ul li a:hover {
+  text-decoration: underline !important;
+}
+.sf-menu li ul li a:hover, .sf-menu li ul li:hover > a {
+  text-decoration: underline !important;
+}
+.sf-menu ul li a.activeLink {
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+#footer {
+  color: #505050;
+  margin: 0;
+  height: 45px;
+  background: white url("//center.redham.ru/clam/elements/footer/simple_grid_gray/website.jpg") no-repeat top left;
+  overflow: hidden;
+}
+#footer a {
+  color: #fff152 ;
+}
+#header { width: 960px; height: 297px; background: url('634734801223596063-header-website-cropped-0,297.jpg') no-repeat top left; }body#header { width: auto; }body { background-color: #000000; }#background-0 { background-image: url('634610320102071545-background-website.jpg'); background-repeat: no-repeat; background-position: top center; }
