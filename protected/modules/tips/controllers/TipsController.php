@@ -25,27 +25,12 @@ public function actionShow()
     if (!$slug)
         throw new CHttpException('404', Yii::t('page', 'Page not found!'));
 
-    $page = null;
+    $tips = null;
+    $tips=Tips::model()->allArchived()->findAll();
 
-    // превью
-    if ((int)Yii::app()->request->getQuery('preview') === 1 && Yii::app()->user->isSuperUser())
-        $page = Page::model()->find('slug = :slug', array(':slug' => $slug));
-    else
-        $page = Page::model()->published()->find('slug = :slug', array(':slug' => $slug));
 
-    if (!$page)
-        throw new CHttpException('404', Yii::t('page', 'Страница не найдена!'));
 
-    // проверим что пользователь может просматривать эту страницу
-    if (($page->is_protected == Page::PROTECTED_YES) && !Yii::app()->user->isAuthenticated())
-    {
-        Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('page', 'Для просмотра этой страницы Вам необходимо авторизоваться!'));
-        $this->redirect(array(Yii::app()->getModule('user')->accountActivationSuccess));
-    }
-
-    $this->currentPage = $page;
-
-    $this->render('page', array('page' => $page));
+    $this->render('tipsbymonth',array('tips'=>$tips));
 }
 
 public function actionBuy()
