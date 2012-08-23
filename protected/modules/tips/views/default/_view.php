@@ -7,6 +7,9 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('guid')); ?>:</b>
 	<?php echo CHtml::encode($data->guid); ?>
 	<br />
+    <b><?php echo CHtml::encode($data->getAttributeLabel('tip_number')); ?>:</b>
+    	<?php echo CHtml::encode($data->tip_number); ?>
+    	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('untillDate')); ?>:</b>
 	<?php echo CHtml::encode(    CLocale::getInstance('ru')->dateFormatter->formatDateTime($data->untillDate,'short',null) ); ?>

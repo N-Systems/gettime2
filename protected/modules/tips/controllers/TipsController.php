@@ -18,6 +18,7 @@ public function actionIndex()
 	    $this->render('tips',array('tips'=>$tips));
     }
 }
+
 public function actionShow()
 {
     $slug = Yii::app()->request->getQuery('slug');
@@ -26,9 +27,19 @@ public function actionShow()
         throw new CHttpException('404', Yii::t('page', 'Page not found!'));
 
     $tips = null;
-    $tips=Tips::model()->allArchived()->findAll();
+    if (($slug)>10) //why 10 - x3
+    {
+        //must be mmyyyy
+        $month=substr($slug,0,2);
+        $year=substr($slug,2,4);
+        $criteria=new CDbCriteria;
+        //$criteria->select=’title’;  // only select the ’title’ column
+        $criteria->condition='month(untillDate)=:month and year(untillDate)=:year';
+        $criteria->params=array(':month'=>$month,':year'=>$year);
+        $tips=Tips::model()->allArchived()->findAll($criteria);
 
 
+    }
 
     $this->render('tipsbymonth',array('tips'=>$tips));
 }

@@ -14,6 +14,11 @@
 		<?php echo $form->textField($model,'guid',array('size'=>60,'maxlength'=>64)); ?>
 		<?php echo $form->error($model,'guid'); ?>
 	</div>
+    <div class="row">
+    		<?php echo $form->labelEx($model,'tip_number'); ?>
+    		<?php echo $form->textField($model,'tip_number',array('size'=>60,'maxlength'=>64)); ?>
+    		<?php echo $form->error($model,'tip_number'); ?>
+    	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'untillDate'); ?>

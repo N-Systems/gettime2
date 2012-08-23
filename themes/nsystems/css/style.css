@@ -364,7 +364,7 @@ content ul
 {
     background-color: #A453E8;
 }
-.bordered
+.bordered, .bordered td
 {
     border: #fff 1px solid;
 }

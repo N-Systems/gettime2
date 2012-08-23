@@ -20,6 +20,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'guid',
+        'tip_number',
 		'untillDate',
 		'untillTime',
 

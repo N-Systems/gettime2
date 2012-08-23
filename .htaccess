@@ -1,0 +1,25 @@
+php_value short_open_tag 1
+php_value register_long_arrays 1
+php_value register_globals 1
+
+AddDefaultCharset utf-8
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# TimThumb REWRITE RULE
+# http://maxim.local/thumbs/upload/images/2012/04/11/general.jpg/120/120/95
+RewriteRule ^thumbs/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ timthumb.php?src=$1/$2/$3/$4/$5/$6&w=$7&h=$8&q=$9 [L,NC]
+
+# otherwise forward it to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+
+DirectoryIndex index.php index.html

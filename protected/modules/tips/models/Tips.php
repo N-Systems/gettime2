@@ -56,13 +56,13 @@ class Tips extends CActiveRecord implements IECartPosition
 			array(' untillDate, untillTime, ratio, gamename,price,stavka', 'required'),
 
 			array('ratio, price', 'numerical'),
-			array('guid', 'length', 'max'=>64),
+			array('guid,tip_number', 'length', 'max'=>64),
 			array('gamename', 'length', 'max'=>500),
             array('finalscore, championship', 'length', 'max'=>255),
             array('victory', 'length', 'max'=>4),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, guid, untillDate, untillTime, ratio, gamename, stavka, victory, price, finalscore, championship', 'safe', 'on'=>'search'),
+			array('id, guid, untillDate, untillTime, ratio, gamename, stavka, victory, price, finalscore, championship, tip_number', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -93,7 +93,7 @@ class Tips extends CActiveRecord implements IECartPosition
 			'victory' => 'Результат ставки (WIN, LOSE, DRAW)',
             'finalscore' => 'Счет игры',
             'championship' => 'Чемпионат',
-
+            'tip_number'=>'Номер прогноза',
 			'price' => 'Цена',
 		);
 	}
@@ -130,7 +130,7 @@ class Tips extends CActiveRecord implements IECartPosition
 		$criteria->compare('price',$this->price);
         $criteria->compare('finalscore',$this->finalscore);
         $criteria->compare('championship',$this->championship);
-
+        $criteria->compare('tip_number',$this->tip_number);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
