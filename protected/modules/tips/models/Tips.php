@@ -101,9 +101,9 @@ class Tips extends CActiveRecord implements IECartPosition
     public function scopes()
     {
         return array(
-            'forsale' => array('condition' => 'untilldate >= "' . date('Y-m-d').'" and victory="" and untilltime>"'.date('H:i').'"','order'=>'untilldate desc,untilltime desc'),
-            'lastArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and untilltime<"'.date('H:i').'" and victory<>""','limit'=>'6','order'=>'untilldate desc,untilltime desc'),
-            'allArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>""','order'=>'untilldate desc,untilltime desc')
+            'forsale' => array('condition' => 'untilldate = "' . date('Y-m-d').'" and victory="" and finalscore=""','order'=>'tip_number, untilldate desc,untilltime desc'),
+            'lastArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>""','limit'=>'6','order'=>'untilldate desc,untilltime desc'),
+            'allArchived' => array('condition' => 'untilldate <= "' . date('Y-m-d').'" and victory<>"" and finalscore<>""','order'=>'untilldate,tip_number')
 
         );
     }

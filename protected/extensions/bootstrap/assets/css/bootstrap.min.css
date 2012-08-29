@@ -1278,7 +1278,7 @@ table {
 }
 
 .table {
-    width: 97%;
+    width: 96%;
     margin: 10px auto;
 }
 
@@ -1364,7 +1364,7 @@ table {
 
 .table tbody tr:hover td, .table tbody tr:hover th {
     background-color: transparent font-family: Calibri;
-    font-size: 18px;
+  /*  font-size: 18px; */
 }
 
 table .span1 {
@@ -2313,7 +2313,7 @@ button.close {
     padding: 4px 10px 4px;
     margin-bottom: 0;
     *margin-left: .3em;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 18px;
     *line-height: 20px;
     color: #333;

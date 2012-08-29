@@ -18,7 +18,7 @@
 html {
   font-size: 100%;
   overflow-y: scroll;
-    height:100%;
+
     position: relative;
 }
 body {
@@ -29,8 +29,7 @@ body {
   font-family: sans-serif;
   color: #373737;
     background: none repeat scroll 0 0 #481e86;
-    height:100%;
-    _height:100%;
+
     position: relative;
 
 }
@@ -183,7 +182,8 @@ blockquote {
 /* BODY 
 ==============================================================*/
 body {
-    background-color: #fff background: url("/img/stadium.jpg") no-repeat scroll center top #000000;
+    background-color: #fff;
+    background: url("/img/stadium.jpg") no-repeat scroll center top #000000;
     background: none repeat scroll 0 0 #7707F0;
 
 }
@@ -300,6 +300,7 @@ background: url('/img/stadium.jpg') no-repeat;
     width:940px;
     margin-left: auto;
     margin-right: auto;
+    background:   none repeat scroll 0 0 #7707F0;
 }
 
 .emptyrow
@@ -362,9 +363,29 @@ content ul
 }
 .monthrow
 {
-    background-color: #A453E8;
+    background-color: transparent;
 }
 .bordered, .bordered td
 {
     border: #fff 1px solid;
+}
+table.small, table.small td
+{
+    font-size: 13px;
+}
+.ident
+{
+    margin-left:25px;
+    color: #fff;
+}
+table.medium, table.medium td
+{
+    font-size: 15px;
+}
+table.medium thead td
+{
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
 }

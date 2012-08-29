@@ -1,7 +1,7 @@
 <?php foreach($tips as $tip):?>
 <tr>
-    <td><span class="s"><?=Yii::app()->dateFormatter->format('dd.MM.yy',$tip['untillDate'])?>
-        <?=Yii::app()->dateFormatter->format('HH:mm',$tip['untillTime'])?></span>
+    <td><span class="s"><?=Yii::app()->dateFormatter->format('dd.MM.yy',$tip['untillDate'])?></span></td>
+     <td>   <span class="s"><?=Yii::app()->dateFormatter->format('HH:mm',$tip['untillTime'])?></span>
     </td>
     <td><span class="s"><?=$tip['gamename']?></span></td>
     <td><span class="s"><?=$tip['stavka']?></span></td>

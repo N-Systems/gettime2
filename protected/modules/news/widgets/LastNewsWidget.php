@@ -1,7 +1,7 @@
 <?php
 class LastNewsWidget extends YWidget
 {
-    public $count = 5;
+    public $count = 10;
 
 
     public function run()

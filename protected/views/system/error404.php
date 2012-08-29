@@ -19,7 +19,7 @@ p {font-family:"Verdana";font-weight:normal;color:black;font-size:9pt;margin-top
 </style>
 </head>
 <body>
-<h1>Page Not Found _ PESDEST</h1>
+<h1>404 -Page Not Found</h1>
 <h2><?php echo nl2br(CHtml::encode($data['message'])); ?></h2>
 <p>
 The requested URL was not found on this server.

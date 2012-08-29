@@ -542,3 +542,457 @@ Stack trace:
 REQUEST_URI=/index.php/order/default/admin
 HTTP_REFERER=http://bet.rus:8080/index.php/yupe/backend
 ---
+2012/08/23 18:42:21 [info] [application] [9e6644728faa1477f91b740d198da456][admin][83] User: admin (ID: 83)
+
+$_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => '123456',
+  ),
+  'yt0' => 'Войти',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => '062398839c3edf5192c9c513c27b0b3b',
+)
+2012/08/23 18:42:22 [info] [application.modules.user] [9e6644728faa1477f91b740d198da456][admin][83] Пользователь admin@admin.ru авторизовался!
+in /Users/denisvolkov/github/local/bettime/protected/modules/user/controllers/account/LoginAction.php (16)
+in /Users/denisvolkov/github/local/bettime/index.php (16)
+2012/08/23 18:50:41 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 18:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blank.gif".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('blank.gif')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/blank.gif
+---
+2012/08/23 19:38:17 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 19:38:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'score' in 'where clause'. The SQL statement executed was: SELECT * FROM `tips` `t` WHERE untilldate <= "2012-08-23" and victory<>"" and score<>"" ORDER BY untilldate desc,untilltime desc LIMIT 6.
+in /Users/denisvolkov/github/local/bettime/protected/modules/tips/widgets/TipsArchive.php (29)
+in /Users/denisvolkov/github/local/bettime/themes/nsystems/views/layouts/main.php (82)
+in /Users/denisvolkov/github/local/bettime/protected/controllers/SiteController.php (29)
+2012/08/23 19:38:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'score' in 'where clause'. The SQL statement executed was: SELECT * FROM `tips` `t` WHERE untilldate <= "2012-08-23" and victory<>"" and score<>"" ORDER BY untilldate desc,untilltime desc LIMIT 6' in /Users/denisvolkov/github/local/bettime/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Users/denisvolkov/github/local/bettime/protected/modules/tips/widgets/TipsArchive.php(29): CActiveRecord->findAll()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(174): TipsArchive->run()
+#5 /Users/denisvolkov/github/local/bettime/themes/nsystems/views/layouts/main.php(82): CBaseController->widget('application.mod...')
+#6 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', Array, true)
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(785): CBaseController->renderFile('/Users/denisvol...', Array, true)
+#9 /Users/denisvolkov/github/local/bettime/protected/controllers/SiteController.php(29): CController->render('index', Array)
+#10 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('index')
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/records/082012
+---
+2012/08/23 19:38:19 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 19:38:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'score' in 'where clause'. The SQL statement executed was: SELECT * FROM `tips` `t` WHERE untilldate <= "2012-08-23" and victory<>"" and score<>"" ORDER BY untilldate desc,untilltime desc LIMIT 6.
+in /Users/denisvolkov/github/local/bettime/protected/modules/tips/widgets/TipsArchive.php (29)
+in /Users/denisvolkov/github/local/bettime/themes/nsystems/views/layouts/main.php (82)
+in /Users/denisvolkov/github/local/bettime/protected/controllers/SiteController.php (29)
+2012/08/23 19:38:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'score' in 'where clause'. The SQL statement executed was: SELECT * FROM `tips` `t` WHERE untilldate <= "2012-08-23" and victory<>"" and score<>"" ORDER BY untilldate desc,untilltime desc LIMIT 6' in /Users/denisvolkov/github/local/bettime/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Users/denisvolkov/github/local/bettime/protected/modules/tips/widgets/TipsArchive.php(29): CActiveRecord->findAll()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(174): TipsArchive->run()
+#5 /Users/denisvolkov/github/local/bettime/themes/nsystems/views/layouts/main.php(82): CBaseController->widget('application.mod...')
+#6 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', Array, true)
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(785): CBaseController->renderFile('/Users/denisvol...', Array, true)
+#9 /Users/denisvolkov/github/local/bettime/protected/controllers/SiteController.php(29): CController->render('index', Array)
+#10 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('index')
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/23 19:39:44 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 19:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blank.gif".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('blank.gif')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/blank.gif
+---
+2012/08/23 19:40:42 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 19:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blank.gif".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('blank.gif')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/blank.gif
+---
+2012/08/23 19:54:34 [info] [application] $_GET=array (
+  'slug' => '072012',
+)
+2012/08/23 19:54:34 [error] [php] Undefined variable: tip (/Users/denisvolkov/github/local/bettime/protected/modules/tips/views/tips/tipsbymonth.php:2)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(870): TipsController->renderFile()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(783): TipsController->renderPartial()
+#2 /Users/denisvolkov/github/local/bettime/protected/modules/tips/controllers/TipsController.php(44): TipsController->render()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): TipsController->actionShow()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): TipsController->runAction()
+#6 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): TipsController->runActionWithFilters()
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): TipsController->run()
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/denisvolkov/github/local/bettime/index.php(18): CWebApplication->run()
+REQUEST_URI=/records/072012
+in /Users/denisvolkov/github/local/bettime/protected/modules/tips/views/tips/tipsbymonth.php (2)
+in /Users/denisvolkov/github/local/bettime/protected/modules/tips/controllers/TipsController.php (44)
+in /Users/denisvolkov/github/local/bettime/index.php (18)
+2012/08/23 20:24:04 [info] [application] $_GET=array (
+  'title' => 'great-offer---2-months-subscrition---only-for-83642000',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 20:24:04 [error] [php] Undefined variable: new (/Users/denisvolkov/github/local/bettime/themes/nsystems/views/news/news/_view.php:4)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(870): NewsController->renderFile()
+#1 /Users/denisvolkov/github/local/bettime/themes/nsystems/views/news/news/news.php(5): NewsController->renderPartial()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): NewsController->renderInternal()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(870): NewsController->renderFile()
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(783): NewsController->renderPartial()
+#6 /Users/denisvolkov/github/local/bettime/protected/modules/news/controllers/NewsController.php(13): NewsController->render()
+#7 unknown(0): NewsController->actionShow()
+#8 /Users/denisvolkov/github/local/bettime/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): NewsController->runAction()
+#12 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): NewsController->runActionWithFilters()
+#13 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): NewsController->run()
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/denisvolkov/github/local/bettime/index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/story/great-offer---2-months-subscrition---only-for-83642000
+in /Users/denisvolkov/github/local/bettime/themes/nsystems/views/news/news/_view.php (4)
+in /Users/denisvolkov/github/local/bettime/themes/nsystems/views/news/news/news.php (5)
+in /Users/denisvolkov/github/local/bettime/protected/modules/news/controllers/NewsController.php (13)
+2012/08/23 20:27:18 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 20:27:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/blank.gif.gif".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('img/blank.gif.g...')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/blank.gif.gif
+HTTP_REFERER=http://bet.rus:8080/index.php/story/great-offer---2-months-subscrition---only-for-83642000
+---
+2012/08/23 20:28:06 [info] [application] [Guest][] User: Guest (ID: )
+
+$_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 20:28:06 [info] [application.modules.user] [Guest][] Пользователь admin вышел!
+in /Users/denisvolkov/github/local/bettime/protected/modules/user/controllers/account/LogOutAction.php (6)
+in /Users/denisvolkov/github/local/bettime/index.php (18)
+2012/08/23 20:43:33 [info] [application] [e53b047553ad2482ff48e0192e9e08e3][admin][83] User: admin (ID: 83)
+
+$_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => '123456',
+  ),
+  'yt0' => 'Войти',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => '9e6644728faa1477f91b740d198da456',
+)
+2012/08/23 20:43:33 [info] [application.modules.user] [e53b047553ad2482ff48e0192e9e08e3][admin][83] Пользователь admin@admin.ru авторизовался!
+in /Users/denisvolkov/github/local/bettime/protected/modules/user/controllers/account/LoginAction.php (16)
+in /Users/denisvolkov/github/local/bettime/index.php (18)
+2012/08/23 20:48:04 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order/default/admin".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/default/a...')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/order/default/admin
+HTTP_REFERER=http://bet.rus:8080/index.php/yupe/backend/modulesettings/module/menu
+---
+2012/08/23 20:49:11 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order/default/admin".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/default/a...')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/order/default/admin
+HTTP_REFERER=http://bet.rus:8080/index.php/yupe/backend/modulesettings/module/menu
+---
+2012/08/23 20:50:40 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/order/
+---
+2012/08/23 20:50:44 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "orders".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('orders')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/orders
+---
+2012/08/23 20:50:48 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:50:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/order
+---
+2012/08/23 20:50:54 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:50:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order/admin".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/admin')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/order/admin
+---
+2012/08/23 20:51:00 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order/default".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/default')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/order/default
+---
+2012/08/23 20:52:55 [info] [application] [e53b047553ad2482ff48e0192e9e08e3][admin][83] User: admin (ID: 83)
+
+$_POST=array (
+  'Order' => 
+  array (
+    'userid' => '',
+    'orderdate' => '01.01.2012',
+    'ordersum' => '50',
+    'status' => 'completed',
+    'payment_status' => 'completed',
+    'delivery_status' => 'deliverd',
+    'delivery_adress' => 'to-denis@yandex.ru',
+  ),
+  'yt0' => '',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/23 20:52:55 [warning] [application] [e53b047553ad2482ff48e0192e9e08e3][admin][83] Failed to set unsafe attribute "orderdate" of "Order".
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/DefaultController.php (71)
+in /Users/denisvolkov/github/local/bettime/index.php (18)
+2012/08/24 11:03:01 [info] [application] [Guest][] User: Guest (ID: )
+
+$_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:03:02 [info] [application.modules.user] [Guest][] Пользователь admin вышел!
+2012/08/24 11:03:07 [info] [application] [e53b047553ad2482ff48e0192e9e08e3][Guest][] User: Guest (ID: )
+
+$_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:03:07 [error] [exception.CException] [e53b047553ad2482ff48e0192e9e08e3][Guest][] exception 'CException' with message 'Property "YWebUser.nick_name" is not defined.' in /Users/denisvolkov/github/local/bettime/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/auth/CWebUser.php(141): CComponent->__get('nick_name')
+#1 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(260): CWebUser->__get('nick_name')
+#2 /Users/denisvolkov/github/local/bettime/themes/backend_bootstrap/views/yupe/layouts/main.php(25): YupeModule->getModules(true)
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', Array, true)
+#5 /Users/denisvolkov/github/local/bettime/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/denisvol...', Array, true)
+#6 /Users/denisvolkov/github/local/bettime/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('  <div class="r...')
+#7 /Users/denisvolkov/github/local/bettime/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('  <div class="r...')
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /Users/denisvolkov/github/local/bettime/themes/backend_bootstrap/views/yupe/layouts/column2.php(52): CBaseController->endContent()
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#12 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', Array, true)
+#13 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(785): CBaseController->renderFile('/Users/denisvol...', Array, true)
+#14 /Users/denisvolkov/github/local/bettime/protected/modules/tips/controllers/DefaultController.php(134): CController->render('index', Array)
+#15 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#16 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /Users/denisvolkov/github/local/bettime/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /Users/denisvolkov/github/local/bettime/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /Users/denisvolkov/github/local/bettime/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /Users/denisvolkov/github/local/bettime/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(292): CFilterChain->run()
+#23 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('')
+#25 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('tips')
+#26 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/tips
+---
+2012/08/24 11:03:55 [info] [application] [e53b047553ad2482ff48e0192e9e08e3][Guest][] User: Guest (ID: )
+
+$_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:03:56 [error] [exception.CException] [e53b047553ad2482ff48e0192e9e08e3][Guest][] exception 'CException' with message 'Property "YWebUser.nick_name" is not defined.' in /Users/denisvolkov/github/local/bettime/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/auth/CWebUser.php(141): CComponent->__get('nick_name')
+#1 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(260): CWebUser->__get('nick_name')
+#2 /Users/denisvolkov/github/local/bettime/themes/backend_bootstrap/views/yupe/layouts/main.php(25): YupeModule->getModules(true)
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', Array, true)
+#5 /Users/denisvolkov/github/local/bettime/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Users/denisvol...', Array, true)
+#6 /Users/denisvolkov/github/local/bettime/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('  <div class="r...')
+#7 /Users/denisvolkov/github/local/bettime/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('  <div class="r...')
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /Users/denisvolkov/github/local/bettime/themes/backend_bootstrap/views/yupe/layouts/column2.php(52): CBaseController->endContent()
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#12 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', Array, true)
+#13 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(785): CBaseController->renderFile('/Users/denisvol...', Array, true)
+#14 /Users/denisvolkov/github/local/bettime/protected/modules/tips/controllers/DefaultController.php(134): CController->render('index', Array)
+#15 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#16 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /Users/denisvolkov/github/local/bettime/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /Users/denisvolkov/github/local/bettime/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /Users/denisvolkov/github/local/bettime/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /Users/denisvolkov/github/local/bettime/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(292): CFilterChain->run()
+#23 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('')
+#25 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('tips')
+#26 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/tips
+---
+2012/08/24 11:05:06 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('registration')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/registration
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---
+2012/08/24 11:05:08 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:05:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('registration')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/registration
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---
+2012/08/24 11:07:13 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:07:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('registration')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/registration
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---
+2012/08/24 11:07:38 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('registration')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/registration
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---
+2012/08/24 11:08:03 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:08:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('registration')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/registration
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---
+2012/08/24 11:09:16 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/24 11:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('registration')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/registration
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---

@@ -128,14 +128,14 @@ return array(
 		        '/' => 'site/index',
                 '/login' => 'user/account/login',
                 '/logout' => 'user/account/logout',
-                '/registration' => 'user/account/registration',
-                '/feedback' => 'feedback/feedback',
+               // '/registration' => 'user/account/registration',
+               // '/feedback' => 'feedback/feedback',
                 '/pages/<slug>' => 'page/page/show',
                 '/story/<title>' => 'news/news/show/',
-                '/post/<slug>.html' => 'blog/post/show/',
-                '/blog/<slug>' => 'blog/blog/show/',
-                '/blogs/' => 'blog/blog/index/',
-                '/users/' =>'user/people/index/',
+               // '/post/<slug>.html' => 'blog/post/show/',
+               // '/blog/<slug>' => 'blog/blog/show/',
+               // '/blogs/' => 'blog/blog/index/',
+               // '/users/' =>'user/people/index/',
 
                 '/<slug:service>' => 'page/page/show',
                 '/<slug:contacts>' => 'page/page/show',
@@ -200,11 +200,11 @@ return array(
                                 ),
                 ),
                 //–њ—А–Њ—Д–∞–є–ї–µ—А –Ј–∞–њ—А–Њ—Б–Њ–≤ –Ї –±–∞–Ј–µ –і–∞–љ–љ—Л—Е, –љ–∞ –њ—А–Њ–і–∞–Ї—И–љ —Б–µ—А–≤–µ—А–∞—Е —А–µ–Ї–Њ–Љ–µ–љ–і—Г–µ—В—Б—П –Њ—В–Ї–ї—О—З–Є—В—М
-                array(
-                    'class'=>'application.modules.yupe.extensions.db_profiler.DbProfileLogRoute',
-                    'countLimit' => 1, // How many times the same query should be executed to be considered inefficient
-                    'slowQueryMin' => 0.01, // Minimum time for the query to be slow
-                ),
+//                array(
+//                    'class'=>'application.modules.yupe.extensions.db_profiler.DbProfileLogRoute',
+//                    'countLimit' => 1, // How many times the same query should be executed to be considered inefficient
+//                    'slowQueryMin' => 0.01, // Minimum time for the query to be slow
+//                ),
             ),
         ),
     ),

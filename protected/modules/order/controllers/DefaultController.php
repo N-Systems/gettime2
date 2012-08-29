@@ -1,6 +1,6 @@
 <?php
 
-class OrderController extends YBackController
+class DefaultController extends YBackController
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning

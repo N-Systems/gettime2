@@ -10,7 +10,7 @@
   'emulatePrepare' => true,
   'charset' => 'utf8',
   'enableParamLogging' => 1,
-  'enableProfiling' => 0,
+  'enableProfiling' => 1,
   'schemaCachingDuration' => 0,
   'tablePrefix' => '',
   'initSQLs'=>array('set GLOBAL time_zone="+0:00"','set LOCAL time_zone="+0:00"','set time_zone="+0:00"'),

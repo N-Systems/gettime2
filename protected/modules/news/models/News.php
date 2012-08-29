@@ -114,7 +114,7 @@ class News extends CActiveRecord
             'published' => array('condition' => 'status = ' . self::STATUS_PUBLISHED),
             'protected' => array('condition' => 'is_protected = ' . self::PROTECTED_YES),
             'public' => array('condition' => 'is_protected = ' . self::PROTECTED_NO),
-            'recent' => array('order' => 'creation_date DESC', 'limit' => 5)
+            'recent' => array('order' => 'creation_date DESC', 'limit' => 10)
         );
     }
 

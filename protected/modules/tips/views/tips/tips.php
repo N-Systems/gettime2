@@ -1,21 +1,14 @@
 <table class="table bordered">
                <thead>
-                   <td>Date</td>
-                   <td>Time</td>
-                   <td>Championship</td>
-                   <td>Game</td>
-                   <td>Bet</td>
-                   <td>Odd</td>
-                   <td>Score</td>
-                   <td>Result</td>
+                   <td><h1>Betting tips archive</h1></td>
               </thead>
 <?php $style='';?>
     <?php $lastTipMonth='';?>
     <?php $lastTipDay=''; $rowSpan=1;?>
 <?php foreach($tips as $tip):?>
         <?php if ($lastTipMonth!=Yii::app()->dateFormatter->format('MMMM yyyy',$tip['untillDate'])):?>
-            <tr><td colspan="8" class="monthrow"><h1><a href="/records/<?=Yii::app()->dateFormatter->format('MMyyyy',$tip['untillDate'])?>">
-               <?=Yii::app()->dateFormatter->format('MMMM yyyy',$tip['untillDate'])?></a></h1>
+            <tr><td  class="monthrow"><h2><a href="/records/<?=Yii::app()->dateFormatter->format('MMyyyy',$tip['untillDate'])?>">
+               <?=Yii::app()->dateFormatter->format('MMMM yyyy',$tip['untillDate'])?> >></a></h2>
             </td></tr>
             <?endif;?>
     <?php $lastTipMonth=Yii::app()->dateFormatter->format('MMMM yyyy',$tip['untillDate']);?>
