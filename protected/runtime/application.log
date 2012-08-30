@@ -996,3 +996,307 @@ Stack trace:
 REQUEST_URI=/index.php/registration
 HTTP_REFERER=http://bet.rus:8080/index.php/login
 ---
+2012/08/29 19:15:16 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/29 19:15:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blank.gif".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('blank.gif')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/blank.gif
+---
+2012/08/29 20:32:37 [info] [application] $_POST=array (
+  'paypal_submit_x' => '106',
+  'paypal_submit_y' => '14',
+)
+2012/08/29 20:32:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paypal/checkout".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('paypal/checkout')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 20:47:10 [info] [application] $_POST=array (
+  'paypal_submit_x' => '102',
+  'paypal_submit_y' => '18',
+)
+2012/08/29 20:47:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paypal/checkout".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('paypal/checkout')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 20:47:24 [info] [application] $_POST=array (
+  'paypal_submit_x' => '95',
+  'paypal_submit_y' => '11',
+)
+2012/08/29 20:47:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paypal/checkout".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('paypal/checkout')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 21:10:10 [info] [application] $_POST=array (
+  'paypal_submit_x' => '112',
+  'paypal_submit_y' => '16',
+)
+2012/08/29 21:10:10 [error] [php] require_once(../paypalfunctions.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:2)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 21:10:57 [info] [application] $_POST=array (
+  'paypal_submit_x' => '112',
+  'paypal_submit_y' => '16',
+)
+2012/08/29 21:10:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "paypalcheckout".' in /Users/denisvolkov/github/local/bettime/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(271): CController->missingAction('paypalcheckout')
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 21:12:36 [info] [application] $_POST=array (
+  'paypal_submit_x' => '112',
+  'paypal_submit_y' => '16',
+)
+2012/08/29 21:12:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "paypalcheckout".' in /Users/denisvolkov/github/local/bettime/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(271): CController->missingAction('paypalcheckout')
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 21:13:46 [info] [application] $_POST=array (
+  'paypal_submit_x' => '112',
+  'paypal_submit_y' => '16',
+)
+2012/08/29 21:13:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "paypalcheckout".' in /Users/denisvolkov/github/local/bettime/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(271): CController->missingAction('paypalcheckout')
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 21:13:52 [info] [application] $_POST=array (
+  'paypal_submit_x' => '112',
+  'paypal_submit_y' => '16',
+)
+2012/08/29 21:13:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "paypalcheckout".' in /Users/denisvolkov/github/local/bettime/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(271): CController->missingAction('paypalcheckout')
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 21:14:29 [info] [application] $_POST=array (
+  'paypal_submit_x' => '86',
+  'paypal_submit_y' => '14',
+)
+2012/08/29 21:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "paypalcheckout".' in /Users/denisvolkov/github/local/bettime/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(271): CController->missingAction('paypalcheckout')
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 21:15:44 [info] [application] $_POST=array (
+  'paypal_submit_x' => '86',
+  'paypal_submit_y' => '14',
+)
+2012/08/29 21:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "paypalcheckout".' in /Users/denisvolkov/github/local/bettime/framework/web/CController.php:484
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(271): CController->missingAction('paypalcheckout')
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 21:22:14 [info] [application] $_POST=array (
+  'paypal_submit_x' => '86',
+  'paypal_submit_y' => '14',
+)
+2012/08/29 21:22:14 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 21:23:23 [info] [application] $_POST=array (
+  'paypal_submit_x' => '93',
+  'paypal_submit_y' => '7',
+)
+2012/08/29 21:23:23 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 21:24:27 [info] [application] $_POST=array (
+  'paypal_submit_x' => '125',
+  'paypal_submit_y' => '19',
+)
+2012/08/29 21:24:27 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 22:12:37 [info] [application] $_POST=array (
+  'paypal_submit_x' => '119',
+  'paypal_submit_y' => '16',
+)
+2012/08/29 22:12:37 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 22:12:56 [info] [application] $_POST=array (
+  'paypal_submit_x' => '68',
+  'paypal_submit_y' => '19',
+)
+2012/08/29 22:12:56 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 22:13:21 [info] [application] $_POST=array (
+  'paypal_submit_x' => '96',
+  'paypal_submit_y' => '13',
+)
+2012/08/29 22:13:21 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 22:13:25 [info] [application] $_POST=array (
+  'paypal_submit_x' => '136',
+  'paypal_submit_y' => '13',
+)
+2012/08/29 22:13:25 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 22:15:51 [info] [application] $_POST=array (
+  'paypal_submit_x' => '98',
+  'paypal_submit_y' => '16',
+)
+
+$_COOKIE=array (
+  'XDEBUG_SESSION' => '14273',
+)
+2012/08/29 22:16:27 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:100)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/29 22:28:50 [info] [application] $_COOKIE=array (
+  'XDEBUG_SESSION' => '14544',
+)
+2012/08/29 22:28:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paypal/EC-6A02659468855005P".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('paypal/EC-6A026...')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/paypal/EC-6A02659468855005P
+HTTP_REFERER=http://bet.rus:8080/?XDEBUG_SESSION_START=14544
+---
+2012/08/29 22:29:12 [info] [application] $_COOKIE=array (
+  'XDEBUG_SESSION' => '14544',
+)
+2012/08/29 22:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paypal/EC-2WN66322YX532013U".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('paypal/EC-2WN66...')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/paypal/EC-2WN66322YX532013U
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/08/29 22:29:29 [info] [application] $_COOKIE=array (
+  'XDEBUG_SESSION' => '14544',
+)
+2012/08/29 22:29:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "paypal/EC-34Y18544S0171472K".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('paypal/EC-34Y18...')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/paypal/EC-34Y18544S0171472K
+HTTP_REFERER=http://bet.rus:8080/
+---
