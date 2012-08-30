@@ -128,14 +128,10 @@ return array(
 		        '/' => 'site/index',
                 '/login' => 'user/account/login',
                 '/logout' => 'user/account/logout',
-               // '/registration' => 'user/account/registration',
-               // '/feedback' => 'feedback/feedback',
+
                 '/pages/<slug>' => 'page/page/show',
                 '/story/<title>' => 'news/news/show/',
-               // '/post/<slug>.html' => 'blog/post/show/',
-               // '/blog/<slug>' => 'blog/blog/show/',
-               // '/blogs/' => 'blog/blog/index/',
-               // '/users/' =>'user/people/index/',
+
 
                 '/<slug:service>' => 'page/page/show',
                 '/<slug:contacts>' => 'page/page/show',
@@ -147,7 +143,11 @@ return array(
                 '/buy/<slug>' => 'tips/tips/buy',
                 '/saveorder'=>'order/order/process',
                 '/paypal/listener' => 'order/order/processpaypal',
-                '/okpay/listener' => 'order/order/processokpay'
+                '/okpay/listener' => 'order/order/processokpay',
+                '/paypal/checkout' => 'order/order/paypalcheckout',
+                '/paypal/confirmation' => 'order/order/paypalconfirmation',
+                '/paypal/cancel' => 'order/order/paypalcancel',
+
 
                 
 

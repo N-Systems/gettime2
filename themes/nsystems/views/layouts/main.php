@@ -63,23 +63,12 @@
 
             </table>
 
-            </div><p class="ident">If you want to buy more that one tip at once, please choose:</p>
-             <div class="row"><div class="span8 offset1">
-                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                 <input type="hidden" name="cmd" value="_s-xclick">
-                 <input type="hidden" name="hosted_button_id" value="NB6HSDBU4FGYJ">
-                 <table>
-                 <tr><td><input type="hidden" name="on0" value="Number of tips">Number of tips</td></tr><tr><td><select name="os0">
-                 	<option value="1 tip">1 tip €50.00 EUR</option>
-                 	<option value="2 tips">2 tips €80.00 EUR</option>
-                 	<option value="3 tips">3 tips €100.00 EUR</option>
-                 	<option value="One month subscription">One month subscription €1,500.00 EUR</option>
-                 </select> </td></tr>
-                 </table>
-                 <input type="hidden" name="currency_code" value="EUR">
-                 <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
-                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                 </form>
+            </div>
+             <!-- INFO: The post URL "checkout.php" is invoked when clicked on "Pay with PayPal" button.-->
+
+             <form action='/paypal/checkout' METHOD='POST'>
+             	<input type='image' name='paypal_submit' id='paypal_submit'  src='https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif' border='0' align='top' alt='Pay with PayPal'/>
+             </form>
 
              </div> </div>
              <div class="framebottom"><img src="/img/blank.gif" width="1" height="13"></div>
@@ -150,6 +139,22 @@
 
 </script>
 </footer>
+
+<!-- Add Digital goods in-context experience. Ensure that this script is added before the closing of html body tag -->
+
+<script src='https://www.paypalobjects.com/js/external/dg.js' type='text/javascript'></script>
+
+
+<script>
+
+	var dg = new PAYPAL.apps.DGFlow(
+	{
+		trigger: 'paypal_submit',
+		expType: 'instant'
+		 //PayPal will decide the experience type for the buyer based on his/her 'Remember me on your computer' option.
+	});
+
+</script>
 
 </body>
 </html>
