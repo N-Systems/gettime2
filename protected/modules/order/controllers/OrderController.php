@@ -10,7 +10,22 @@ class OrderController extends YFrontController
 
     public function actionPaypalCheckout()
     {
+        $itemsCount=0;
+        if (isset($_POST))
+        {
+            foreach ($_POST as $key=>$value)
+            {
 
+                if (substr($key,0,3)=='tip')
+                {
+                  $itemsCount++;
+                  $items[]=array('name' => $key, 'amt' => $value, 'qty' => 1);
+                }
+
+            }
+           print_r($items);
+
+        }
 
         $PaymentOption = "PayPal";
         if ( $PaymentOption == "PayPal")
@@ -94,11 +109,8 @@ class OrderController extends YFrontController
                         $ErrorLongMsg = urldecode($resArray["L_LONGMESSAGE0"]);
                         $ErrorSeverityCode = urldecode($resArray["L_SEVERITYCODE0"]);
 
-                        echo "SetExpressCheckout API call failed. ";
-                        echo "Detailed Error Message: " . $ErrorLongMsg;
-                        echo "Short Error Message: " . $ErrorShortMsg;
-                        echo "Error Code: " . $ErrorCode;
-                        echo "Error Severity Code: " . $ErrorSeverityCode;
+                        $this->render('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+
                 }
         }
     }
@@ -206,9 +218,7 @@ class OrderController extends YFrontController
 
         		// Add javascript to close Digital Goods frame. You may want to add more javascript code to
         		// display some info message indicating status of purchase in the parent window
-        		?>
 
-            <?php
                 $this->render('paypal_payment_succesfull',array('payment_status'=>$paymentStatus));
 
         	}
@@ -219,13 +229,8 @@ class OrderController extends YFrontController
         		$ErrorShortMsg = urldecode($resArray["L_SHORTMESSAGE0"]);
         		$ErrorLongMsg = urldecode($resArray["L_LONGMESSAGE0"]);
         		$ErrorSeverityCode = urldecode($resArray["L_SEVERITYCODE0"]);
-                $this->render('paypal_payment_failed');
+                $this->render('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
 
-//        		echo "DoExpressCheckoutDetails API call failed. ";
-//        		echo "Detailed Error Message: " . $ErrorLongMsg;
-//        		echo "Short Error Message: " . $ErrorShortMsg;
-//        		echo "Error Code: " . $ErrorCode;
-//        		echo "Error Severity Code: " . $ErrorSeverityCode;
         	?>
 
         <?php

@@ -18,6 +18,8 @@
 <!--[if lt IE 9]>
 <script src="<?=Yii::app()->request->baseUrl?>/themes/nsystems/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+    <script src="<?=Yii::app()->request->baseUrl?>/themes/nsystems/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+
 </head>
 <body>
 <div class="container" id="main">
@@ -49,30 +51,31 @@
              <div class="frametop"><img src="/img/blank.gif" width="1" height="13"></div>
 
              <h1 class="date"><span class="todays">Today's</span> betting tips:  <?=date('d.m.Y',time())?> </h1>
-
+             <form action='/paypal/checkout' METHOD='POST' class="paypal_submit">
             <div class="autoheighttips">
             <table class="table bordered medium" >
                 <thead>
-                <td>Tip #</td>
-                    <td>Time (UTC)</td>
-                    <td>Odd</td>
-                    <td>Price</td>
-                    <td>Action</td>
+                <td class="choosecolumn"style="width: 52px;">Choose</td>
+                <td class="col1">Tip #</td>
+                    <td class="col2">Time (UTC)</td>
+                    <td class="col3">Odd</td>
+                    <td class="col4">Price</td>
+
                 </thead>
                 <?php  $this->widget('application.modules.tips.widgets.TipsForSale');?>
 
             </table>
 
             </div>
-             <!-- INFO: The post URL "checkout.php" is invoked when clicked on "Pay with PayPal" button.-->
+             <div id="summary">No tips selected</div>
 
-             <form action='/paypal/checkout' METHOD='POST'>
+
              	<input type='image' name='paypal_submit' id='paypal_submit'  src='https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif' border='0' align='top' alt='Pay with PayPal'/>
              </form>
-
-             </div> </div>
              <div class="framebottom"><img src="/img/blank.gif" width="1" height="13"></div>
              </div>
+
+
 
 
          <div class="span6 framemiddle">
@@ -96,7 +99,9 @@
              <div class="framebottom"><img src="/img/blank.gif" width="1" height="13"></div>
          </div>
      </section>
-    </div>
+ </div>
+
+
 
  <div class="row">
   <div class="span12">
@@ -112,7 +117,7 @@
 </div>
 
 
-</div>
+
 <div id="footer">
     <footer>
       <div class="row ">
@@ -122,6 +127,7 @@
             </nav>
         </span>
       </div>
+</div>
 </div>
 
 <script type="text/javascript">

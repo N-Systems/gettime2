@@ -17,7 +17,7 @@
 	//'------------------------------------
 
 global $API_Endpoint, $version, $API_UserName, $API_Password, $API_Signature;
-global $USE_PROXY, $PROXY_HOST, $PROXY_PORT;
+global $USE_PROXY, $PROXY_HOST, $PROXY_PORT, $PAYPAL_URL, $PAYPAL_DG_URL;
 
 	 $API_UserName="seller_1344370447_biz_api1.bettime.info";
  $API_Password="1344370469";
