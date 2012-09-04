@@ -4,10 +4,17 @@ class OrderModule extends YWebModule
 {
     //public $editor = 'application.modules.yupe.widgets.editors.imperaviRedactor.EImperaviRedactorWidget';
 
+    public $price_for_1_tip, $price_for_2_tips, $price_for_3_tips, $price_subscription;
+
     public function getParamsLabels()
     {
         return array(
             'adminMenuOrder' => Yii::t('order','Порядок следования в меню'),
+            'price_for_1_tip'=> Yii::t('order','Цена 1 ставки'),
+                        'price_for_2_tips'=> Yii::t('order','Цена 2 ставок'),
+                        'price_for_3_tips'=> Yii::t('order','Цена 3 ставок'),
+                        'price_subscription'=> Yii::t('order','Цена подписки'),
+
        //     'editor'         => Yii::t('order','Визуальный редактор')
         );
     }
@@ -20,8 +27,12 @@ class OrderModule extends YWebModule
     public function getEditableParams()
     {
         return array(
-            'adminMenuOrder'//,
+            'adminMenuOrder',//,
             //'editor' => Yii::app()->getModule('yupe')->getEditors()
+            'price_for_1_tip',
+            'price_for_2_tips',
+            'price_for_3_tips' ,
+            'price_subscription',
         );
     }
 

@@ -1,6 +1,5 @@
-<h1 class="ident">
-               <?=Yii::app()->dateFormatter->format('MMMM yyyy',$tips[0]['untillDate'])?> records and <a href="#stats">statistics</a></h1>
-<table class="table bordered medium">
+<h1 class="ident">Thanks for purchase.Your tips are here: </h1>
+  <table class="table bordered medium">
                <thead>
 
                    <td>Date</td>
@@ -48,9 +47,3 @@
     <?php $lastTipDay==Yii::app()->dateFormatter->format('dd',$tip['untillDate']); ?>
 <?endforeach;?>
 </table>
-    <div class="row">
-        <div class="span10 offset1">
-    <a name="stats"></a><h1>Statistics</h1>
-<?php $this->widget("application.modules.contentblock.widgets.ContentBlockWidget", array("code" => Yii::app()->dateFormatter->format('MMyyyy',$tip['untillDate']))); ?>
-        </div>
-    </div>

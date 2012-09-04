@@ -1,6 +1,6 @@
 <?php
      // P3P Policies (http://www.w3.org/TR/2002/REC-P3P-20020416/#compact_policies)
-       header('P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"');
+header('P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"');
 // подробнее про index.php http://www.yiiframework.ru/doc/guide/ru/basics.entry
 date_default_timezone_set('Europe/Moscow');
 
@@ -10,8 +10,8 @@ $yii = dirname(__FILE__) . '/framework/yii.php';
 $config = dirname(__FILE__) . '/protected/config/main.php';
 
 // при работе сайта в "боевом" режиме следующие две строки рекомендуется закомментировать
-//defined('YII_DEBUG') or define('YII_DEBUG', true);
-//defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
+defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
 defined('BETTIME_PRODUCTION') or define('BETTIME_PRODUCTION', true); // true - если это боевой сайт
 
 

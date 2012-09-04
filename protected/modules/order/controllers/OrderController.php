@@ -6,100 +6,79 @@ class OrderController extends YFrontController
     public $mode='real'; // empty if real mode, 'sandbox' for testing
     public $paymentAmount=50;
     public $items=array('name'=>'Default tip','amt'=>50,'qty'=>1); // array('name' => 'Betting tip #2 at 02.09.2012', 'amt' => $paymentAmount, 'qty' => 1);
-
+    public $itemsCount=0;
+    public $tip1=0, $tip2=0, $tip3=0,$subscripton='';
 
     public function actionPaypalCheckout()
     {
-        $itemsCount=0;
+        $price1=Yii::app()->getModule('order')->price_for_1_tip;
+        $price2=Yii::app()->getModule('order')->price_for_2_tips;
+        $price3=Yii::app()->getModule('order')->price_for_3_tips;
+        $priceSubscription=Yii::app()->getModule('order')->price_subscription;
+
+
+        unset($items);
         if (isset($_POST))
         {
-            foreach ($_POST as $key=>$value)
+            $ThisPayPalOrder=new PaypalOrders();
+
+            $itemsCount=count($_POST['tip']);
+            if ($itemsCount==1) { $price=$price1; $sum=$price1;}
+            if ($itemsCount==2) { $price=$price1%2; $sum=$price2; }
+            if ($itemsCount==3) { $price=$price3%3; $sum=$price3; }
+
+            foreach ($_POST['tip'] as $tipNumber)
             {
+                  if ($tipNumber==1) {$ThisPayPalOrder->tip1=1;}
+                if ($tipNumber==2) {$ThisPayPalOrder->tip2=1;}
+                if ($tipNumber==3) {$ThisPayPalOrder->tip3=1;}
 
-                if (substr($key,0,3)=='tip')
-                {
-                  $itemsCount++;
-                  $items[]=array('name' => $key, 'amt' => $value, 'qty' => 1);
-                }
-
+                  $items[]=array('name' => $tipNumber, 'amt' => $price, 'qty' => 1);
             }
-           print_r($items);
 
+
+            $this->paymentAmount=$sum;
+
+        }
+        else
+        {
+            $this->render('empty_arguments');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+            exit;
         }
 
         $PaymentOption = "PayPal";
         if ( $PaymentOption == "PayPal")
         {
-                // ==================================
-                // PayPal Express Checkout Module
-                // ==================================
-
-
-
-                //'------------------------------------
-                //' The paymentAmount is the total value of
-                //' the purchase.
-                //'
-                //' TODO: Enter the total Payment Amount within the quotes.
-                //' example : $paymentAmount = "15.00";
-                //'------------------------------------
-
                 $paymentAmount = $this->paymentAmount;
-
-
-
-                //'------------------------------------
-                //' The currencyCodeType
-                //' is set to the selections made on the Integration Assistant
-                //'------------------------------------
                 $currencyCodeType = "EUR";
                 $paymentType = "Sale";
-
-                //'------------------------------------
-                //' The returnURL is the location where buyers return to when a
-                //' payment has been succesfully authorized.
-                //'
-                //' This is set to the value entered on the Integration Assistant
-                //'------------------------------------
                 $returnURL = "http://bettime.info/paypal/confirmation";
-
-                //'------------------------------------
-                //' The cancelURL is the location buyers are sent to when they hit the
-                //' cancel button during authorization of payment during the PayPal flow
-                //'
-                //' This is set to the value entered on the Integration Assistant
-                //'------------------------------------
                 $cancelURL = "http://bettime.info/paypal/cancel";
-
-                //'------------------------------------
-                //' Calls the SetExpressCheckout API call
-                //'
-                //' The CallSetExpressCheckout function is defined in the file PayPalFunctions.php,
-                //' it is included at the top of this file.
-                //'-------------------------------------------------
-
-
-        		$items = array();
         		$items[] = $this->items;//
-
-        		//::ITEMS::
-
-        		// to add anothe item, uncomment the lines below and comment the line above
-        		// $items[] = array('name' => 'Item Name1', 'amt' => $itemAmount1, 'qty' => 1);
-        		// $items[] = array('name' => 'Item Name2', 'amt' => $itemAmount2, 'qty' => 1);
-        		// $paymentAmount = $itemAmount1 + $itemAmount2;
-
-        		// assign corresponding item amounts to "$itemAmount1" and "$itemAmount2"
-        		// NOTE : sum of all the item amounts should be equal to payment  amount
-
         		$resArray = SetExpressCheckoutDG( $paymentAmount, $currencyCodeType, $paymentType,
         												$returnURL, $cancelURL, $items );
 
+
                 $ack = strtoupper($resArray["ACK"]);
+
+
+
                 if($ack == "SUCCESS" || $ack == "SUCCESSWITHWARNING")
                 {
+
+
                         $token = urldecode($resArray["TOKEN"]);
-                         RedirectToPayPalDG( $token );
+                        $ThisPayPalOrder->token=$token;
+                        if ($ThisPayPalOrder->save())
+                            {
+                                RedirectToPayPalDG( $token );
+                            }
+                        else
+                            {
+                                throw new CDbException($ThisPayPalOrder->errors);exit;
+                              // $this->render('cannot_save_order');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+                            }
+
                 }
                 else
                 {
@@ -108,69 +87,66 @@ class OrderController extends YFrontController
                         $ErrorShortMsg = urldecode($resArray["L_SHORTMESSAGE0"]);
                         $ErrorLongMsg = urldecode($resArray["L_LONGMESSAGE0"]);
                         $ErrorSeverityCode = urldecode($resArray["L_SEVERITYCODE0"]);
-
-                        $this->render('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
-
+                        $ThisPayPalOrder->ErrorCode=$ErrorCode;
+                        $ThisPayPalOrder->ErrorShortMsg=$ErrorShortMsg;
+                        $ThisPayPalOrder->ErrorLongMsg=$ErrorLongMsg;
+                        $ThisPayPalOrder->ErrorSeverityCode=$ErrorSeverityCode;
+                        if ($ThisPayPalOrder->save())
+                            {
+                                 $this->render('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+                            }
+                        else
+                          {
+                              throw new CDbException($ThisPayPalOrder->errors);exit;
+                           //  $this->render('cannot_save_order');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+                          }
                 }
         }
     }
 
-    public function paypalConfirmation()
+    public function actionPaypalConfirmation()
     {
 
         $PaymentOption = "PayPal";
         if ( $PaymentOption == "PayPal" )
         {
-        	/*
-        	 '------------------------------------
-        	 ' this  step is required to get parameters to make DoExpressCheckout API call,
-        	 ' this step is required only if you are not storing the SetExpressCheckout API call's request values in you database.
-        	 ' ------------------------------------
-        	 */
         	$res = GetExpressCheckoutDetails( $_REQUEST['token'] );
-
-        	/*
-        	 '------------------------------------
-        	 ' The paymentAmount is the total value of
-        	 ' the purchase.
-        	 '------------------------------------
-        	 */
-
         	$finalPaymentAmount =  $res["AMT"];
-
-        	/*
-        	 '------------------------------------
-        	 ' Calls the DoExpressCheckoutPayment API call
-        	 '
-        	 ' The ConfirmPayment function is defined in the file PayPalFunctions.php,
-        	 ' that is included at the top of this file.
-        	 '-------------------------------------------------
-        	 */
-
         	//Format the  parameters that were stored or received from GetExperessCheckout call.
         	$token 				= $_REQUEST['token'];
         	$payerID 			= $_REQUEST['PayerID'];
         	$paymentType 		= 'Sale';
         	$currencyCodeType 	= $res['CURRENCYCODE'];
 
+            $criteria=new CDbCriteria;
+            $criteria->condition=array(
+                'token=:token'
+            );
+            $criteria->params=array('token'=>$token);
+
+
+            $ThisPayPalOrder=PaypalOrders::model()->find($criteria);
+            if (empty($ThisPayPalOrder))
+            {
+                $this->render('paypal_cannot_find_order');
+                exit;
+            }
+
+
+            $ThisPayPalOrder->token=$token;
+            $ThisPayPalOrder->payerID=$payerID;
+            $ThisPayPalOrder->paymentType=$paymentType;
+            $ThisPayPalOrder->currencyCodeType=$currencyCodeType;
+
+            $ThisPayPalOrder->ack='UNKNOWN';
+            $ThisPayPalOrder->update();
 
         	$resArray = ConfirmPayment ( $token, $paymentType, $currencyCodeType, $payerID, $finalPaymentAmount );
         	$ack = strtoupper($resArray["ACK"]);
         	if( $ack == "SUCCESS" || $ack == "SUCCESSWITHWARNING" )
         	{
 
-        		/*
-        		 * TODO: Proceed with desired action after the payment
-        		 * (ex: start download, start streaming, Add coins to the game.. etc)
-        		 '********************************************************************************************************************
-        		 '
-        		 ' THE PARTNER SHOULD SAVE THE KEY TRANSACTION RELATED INFORMATION LIKE
-        		 '                    transactionId & orderTime
-        		 '  IN THEIR OWN  DATABASE
-        		 ' AND THE REST OF THE INFORMATION CAN BE USED TO UNDERSTAND THE STATUS OF THE PAYMENT
-        		 '
-        		 '********************************************************************************************************************
-        		 */
+        		/*        		 * TODO: Proceed with desired action after the payment            		 */
 
         		$transactionId		= $resArray["PAYMENTINFO_0_TRANSACTIONID"]; // Unique transaction ID of the payment.
         		$transactionType 	= $resArray["PAYMENTINFO_0_TRANSACTIONTYPE"]; // The type of transaction Possible values: l  cart l  express-checkout
@@ -183,6 +159,16 @@ class OrderController extends YFrontController
         		$taxAmt				= $resArray["PAYMENTINFO_0_TAXAMT"];  // Tax charged on the transaction.
         	//	$exchangeRate		= $resArray["PAYMENTINFO_0_EXCHANGERATE"];  // Exchange rate if a currency conversion occurred. Relevant only if your are billing in their non-primary currency. If the customer chooses to pay with a currency other than the non-primary currency, the conversion occurs in the customer's account.
 
+                $ThisPayPalOrder->ack=$ack;
+                $ThisPayPalOrder->transactionId=$transactionId;
+                $ThisPayPalOrder->transactionType=$transactionType;
+                $ThisPayPalOrder->paymentType=$paymentType;
+                $ThisPayPalOrder->orderTime=$orderTime;
+                $ThisPayPalOrder->amt=$amt;
+                $ThisPayPalOrder->currencyCode=$currencyCode;
+                $ThisPayPalOrder->feeAmt=$feeAmt;
+                $ThisPayPalOrder->taxAmt=$taxAmt;
+
         		/*
         		 ' Status of the payment:
         		 'Completed: The payment has been completed, and the funds have been added successfully to your account balance.
@@ -190,6 +176,7 @@ class OrderController extends YFrontController
         		 */
 
         		$paymentStatus = $resArray["PAYMENTINFO_0_PAYMENTSTATUS"];
+                $ThisPayPalOrder->paymentStatus=$paymentStatus;
 
         		/*
         		 'The reason the payment is pending:
@@ -203,7 +190,7 @@ class OrderController extends YFrontController
         		 */
 
         		$pendingReason = $resArray["PAYMENTINFO_0_PENDINGREASON"];
-
+                $ThisPayPalOrder->pendingReason=$pendingReason;
         		/*
         		 'The reason for a reversal if TransactionType is reversal:
         		 '  none: No reason code
@@ -215,11 +202,34 @@ class OrderController extends YFrontController
         		 */
 
         		$reasonCode	= $resArray["PAYMENTINFO_0_REASONCODE"];
+                $ThisPayPalOrder->reasonCode=$reasonCode;
 
         		// Add javascript to close Digital Goods frame. You may want to add more javascript code to
         		// display some info message indicating status of purchase in the parent window
 
-                $this->render('paypal_payment_succesfull',array('payment_status'=>$paymentStatus));
+                $ThisPayPalOrder->update();
+                if ($ThisPayPalOrder->paymentStatus=='Completed')
+                {
+                    $criteria=new CDbCriteria;
+                    $criteria->condition=array(
+                        'tip1=:tip1',
+                        'tip2=:tip2',
+                        'tip3=:tip3',
+                        'subscription=:subscription',
+
+                    );
+                    $criteria->params=array('tip1'=>$ThisPayPalOrder->tip1);
+                    $criteria->params=array('tip2'=>$ThisPayPalOrder->tip2);
+                    $criteria->params=array('tip3'=>$ThisPayPalOrder->tip3);
+                    $criteria->params=array('subscription'=>$ThisPayPalOrder->subscription);
+
+                    $tips=Tips::model()->forsale->findAll($criteria);
+
+                    $this->render('paypal_show_bought_tips',array('tips'=>$tips));
+                }
+
+
+
 
         	}
         	else
@@ -229,6 +239,11 @@ class OrderController extends YFrontController
         		$ErrorShortMsg = urldecode($resArray["L_SHORTMESSAGE0"]);
         		$ErrorLongMsg = urldecode($resArray["L_LONGMESSAGE0"]);
         		$ErrorSeverityCode = urldecode($resArray["L_SEVERITYCODE0"]);
+                $ThisPayPalOrder->ErrorCode=$ErrorCode;
+                $ThisPayPalOrder->ErrorShortMsg=$ErrorShortMsg;
+                $ThisPayPalOrder->ErrorLongMsg=$ErrorLongMsg;
+                $ThisPayPalOrder->ErrorSeverityCode=$ErrorSeverityCode;
+                $ThisPayPalOrder->update();
                 $this->render('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
 
         	?>
@@ -237,6 +252,9 @@ class OrderController extends YFrontController
         	}
         }
     }
+
+
+
 
 	public function actionIndex()
 	{
@@ -575,86 +593,6 @@ class OrderController extends YFrontController
 
 
 
-    } //function
-
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
-
-/*
- * test_ipn=1
- *  payment_type=instant
- *   payment_date=12:53:36 Aug 07, 2012
- * PDT
- *  payment_status=Completed
- *  address_status=confirmed
- *  payer_status=unverified
- * first_name=John
- *  last_name=Smith
- *  payer_email=buyer@paypalsandbox.com
- *  payer_id=TESTBUYERID01
- * address_name=John Smith
- * address_country=United States
- *   address_country_code=US
- *  address_zip=95131
- *  address_state=CA
- * address_city=San Jose
- *  address_street=123, any street
- *  receiver_email=seller@paypalsandbox.com
- *  receiver_id=TESTSELLERID1
- *  residence_country=US
- * item_name1=something
- *  item_number1=AK-1234
- *  quantity1=1
- *  tax=2.02
- *  mc_currency=USD
- *  mc_fee=0.44
- *   mc_gross_1=9.34
- *    mc_handling=2.06
- *   mc_handling1=1.67
- *  mc_shipping=3.02
- *  mc_shipping1=1.02
- *  txn_type=cart
- *  txn_id=36871953
- *  notify_version=2.4
- *  custom=xyz123
- * invoice=abc1234
- *  charset=windows-1252
- *  verify_sign=AFcWxV21C7fd0v3bYYYRCpSSRl31AFDscdIXEPJQvTJkv0cOAAXXsFdw
- *  VERIFIED
- *
- *
- *
- *  $item_name1=$_POST['item_name1'];
- //        $item_number1=$_POST['item_number1'];
- //        $item_quantity1=$_POST['quantity1'];
- //        $item_quantity=$_POST['quantity'];
-
- *
- *
- *
- */
+ }
 }
+;?>

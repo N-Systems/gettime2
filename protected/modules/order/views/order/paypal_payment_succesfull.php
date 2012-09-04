@@ -1,6 +1,6 @@
 <html>
         <script>
-        alert(<?=$this->paymentStatus?>);
+        alert('Payment confirmed. You will receive your tips in 15-20 minutes.');
         // add relevant message above or remove the line if not required
         window.onload = function(){
             if(window.opener){
