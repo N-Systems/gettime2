@@ -34,7 +34,7 @@
                 }
                 if ($i==3)
                 {
-                    $("#summary").html('3 tips + Bonus tips, Total &#8364;100 (You save &#8364;50!)');
+                    $("#summary").html('3 tips + Bonus tips, Total &#8364;99 (You save &#8364;51!)');
                     $(".bonustips").html('');
                     $(".bonustipsprice").html('free');
 
@@ -63,7 +63,7 @@ foreach($tips as $tip):?>
     <td>
     <?php if (mb_strtoupper(substr($tip['tip_number'],0,1))!="B")
     { ?>
-        <input type="checkbox" name="tip[]" value="Betting tip: #<?=$tip['tip_number']?>">
+        <input type="checkbox" name="tip[]" value="<?=$tip['tip_number']?>">
     <?php } else {
         ?>
         <span class="bonustips">Choose all to get for free</span>

@@ -14,6 +14,10 @@ class OrderController extends YFrontController
         $price1=Yii::app()->getModule('order')->price_for_1_tip;
         $price2=Yii::app()->getModule('order')->price_for_2_tips;
         $price3=Yii::app()->getModule('order')->price_for_3_tips;
+      //  var_dump($price1);
+      ////  var_dump($price2);
+      //  var_dump($price3);
+
         $priceSubscription=Yii::app()->getModule('order')->price_subscription;
 
 
@@ -22,27 +26,33 @@ class OrderController extends YFrontController
         {
             $ThisPayPalOrder=new PaypalOrders();
 
+            if (!isset($_POST['tip'])) {  $this->renderPartial('empty_arguments'); exit; }
+
             $itemsCount=count($_POST['tip']);
-            if ($itemsCount==1) { $price=$price1; $sum=$price1;}
-            if ($itemsCount==2) { $price=$price1%2; $sum=$price2; }
-            if ($itemsCount==3) { $price=$price3%3; $sum=$price3; }
+            if ($itemsCount==1) { $price=(int) $price1; $sum=$price1;}
+            if ($itemsCount==2) { $price=(int) round($price2/2); $sum=$price2; }
+            if ($itemsCount==3) { $price=(int) round($price3/3); $sum=$price3; }
+
 
             foreach ($_POST['tip'] as $tipNumber)
             {
-                  if ($tipNumber==1) {$ThisPayPalOrder->tip1=1;}
+                if ($tipNumber==1) {$ThisPayPalOrder->tip1=1;}
                 if ($tipNumber==2) {$ThisPayPalOrder->tip2=1;}
                 if ($tipNumber==3) {$ThisPayPalOrder->tip3=1;}
 
-                  $items[]=array('name' => $tipNumber, 'amt' => $price, 'qty' => 1);
+
+                    $items[]=array('name' => 'Betting tip #'.$tipNumber, 'amt' => $price, 'qty' => 1);
+
+
             }
-
-
-            $this->paymentAmount=$sum;
+          //  var_dump($items);
+          //  var_dump($sum);
+            $this->paymentAmount=(int) $sum;
 
         }
         else
         {
-            $this->render('empty_arguments');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+            $this->renderPartial('empty_arguments');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
             exit;
         }
 
@@ -54,14 +64,14 @@ class OrderController extends YFrontController
                 $paymentType = "Sale";
                 $returnURL = "http://bettime.info/paypal/confirmation";
                 $cancelURL = "http://bettime.info/paypal/cancel";
-        		$items[] = $this->items;//
+        		//$items[] = $this->items;//
         		$resArray = SetExpressCheckoutDG( $paymentAmount, $currencyCodeType, $paymentType,
         												$returnURL, $cancelURL, $items );
 
 
                 $ack = strtoupper($resArray["ACK"]);
 
-
+               // var_dump($ack);
 
                 if($ack == "SUCCESS" || $ack == "SUCCESSWITHWARNING")
                 {
@@ -75,8 +85,9 @@ class OrderController extends YFrontController
                             }
                         else
                             {
-                                throw new CDbException($ThisPayPalOrder->errors);exit;
-                              // $this->render('cannot_save_order');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+
+                               $this->renderPartial('cannot_save_order');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+                                exit;
                             }
 
                 }
@@ -93,12 +104,12 @@ class OrderController extends YFrontController
                         $ThisPayPalOrder->ErrorSeverityCode=$ErrorSeverityCode;
                         if ($ThisPayPalOrder->save())
                             {
-                                 $this->render('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+                                 $this->renderPartial('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
                             }
                         else
                           {
-                              throw new CDbException($ThisPayPalOrder->errors);exit;
-                           //  $this->render('cannot_save_order');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+                              throw new CDbException($ErrorLongMsg);exit;
+                             $this->renderPartial('cannot_save_order');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
                           }
                 }
         }
@@ -119,16 +130,14 @@ class OrderController extends YFrontController
         	$currencyCodeType 	= $res['CURRENCYCODE'];
 
             $criteria=new CDbCriteria;
-            $criteria->condition=array(
-                'token=:token'
-            );
-            $criteria->params=array('token'=>$token);
+            $criteria->condition='token = :token';
+            $criteria->params=array(':token'=>$token);
 
 
             $ThisPayPalOrder=PaypalOrders::model()->find($criteria);
             if (empty($ThisPayPalOrder))
             {
-                $this->render('paypal_cannot_find_order');
+                $this->renderPartial('paypal_cannot_find_order');
                 exit;
             }
 
@@ -139,7 +148,7 @@ class OrderController extends YFrontController
             $ThisPayPalOrder->currencyCodeType=$currencyCodeType;
 
             $ThisPayPalOrder->ack='UNKNOWN';
-            $ThisPayPalOrder->update();
+            $ThisPayPalOrder->save();
 
         	$resArray = ConfirmPayment ( $token, $paymentType, $currencyCodeType, $payerID, $finalPaymentAmount );
         	$ack = strtoupper($resArray["ACK"]);
@@ -158,6 +167,9 @@ class OrderController extends YFrontController
         	//	$settleAmt			= $resArray["PAYMENTINFO_0_SETTLEAMT"];  // Amount deposited in your PayPal account after a currency conversion.
         		$taxAmt				= $resArray["PAYMENTINFO_0_TAXAMT"];  // Tax charged on the transaction.
         	//	$exchangeRate		= $resArray["PAYMENTINFO_0_EXCHANGERATE"];  // Exchange rate if a currency conversion occurred. Relevant only if your are billing in their non-primary currency. If the customer chooses to pay with a currency other than the non-primary currency, the conversion occurs in the customer's account.
+          //     var_dump($criteria);
+                $ThisPayPalOrder=PaypalOrders::model()->find($criteria);
+                //var_dump($ThisPayPalOrder);
 
                 $ThisPayPalOrder->ack=$ack;
                 $ThisPayPalOrder->transactionId=$transactionId;
@@ -207,26 +219,31 @@ class OrderController extends YFrontController
         		// Add javascript to close Digital Goods frame. You may want to add more javascript code to
         		// display some info message indicating status of purchase in the parent window
 
-                $ThisPayPalOrder->update();
-                if ($ThisPayPalOrder->paymentStatus=='Completed')
+                if ($ThisPayPalOrder->save())
                 {
-                    $criteria=new CDbCriteria;
-                    $criteria->condition=array(
-                        'tip1=:tip1',
-                        'tip2=:tip2',
-                        'tip3=:tip3',
-                        'subscription=:subscription',
+                    if ($paymentStatus=='Completed')
+                                    {
+                                        $criteria=new CDbCriteria;
+                                        $criteria->condition='tip_number=:tip1 or tip_number=2*:tip2 or tip_number=3*:tip3';
+                                        $criteria->params=array(':tip1'=>$ThisPayPalOrder->tip1, ':tip2'=>$ThisPayPalOrder->tip2,':tip3'=>$ThisPayPalOrder->tip3 );
+                                        $tips=Tips::model()->forsale()->findAll($criteria);
+                                        $this->renderPartial('paypal_show_bought_tips',array('tips'=>$tips));
+                                    }
+                    else
+                    {
+                        $this->renderPartial('paypal_pending'); exit;
 
-                    );
-                    $criteria->params=array('tip1'=>$ThisPayPalOrder->tip1);
-                    $criteria->params=array('tip2'=>$ThisPayPalOrder->tip2);
-                    $criteria->params=array('tip3'=>$ThisPayPalOrder->tip3);
-                    $criteria->params=array('subscription'=>$ThisPayPalOrder->subscription);
+                    }
 
-                    $tips=Tips::model()->forsale->findAll($criteria);
 
-                    $this->render('paypal_show_bought_tips',array('tips'=>$tips));
                 }
+                else
+                {
+                    $this->renderPartial('cannot_save_order'); exit;
+                }
+
+
+
 
 
 
@@ -244,7 +261,7 @@ class OrderController extends YFrontController
                 $ThisPayPalOrder->ErrorLongMsg=$ErrorLongMsg;
                 $ThisPayPalOrder->ErrorSeverityCode=$ErrorSeverityCode;
                 $ThisPayPalOrder->update();
-                $this->render('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
+                $this->renderPartial('paypal_payment_failed');//,array($ErrorCode,$ErrorShortMsg,$ErrorLongMsg,$ErrorSeverityCode));
 
         	?>
 
