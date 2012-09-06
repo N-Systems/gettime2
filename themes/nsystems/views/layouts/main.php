@@ -29,6 +29,8 @@
       <div class="row">
         <div class="span1"><a href="/"><img src="/img/ball.png" width="60" height="60" class="ball"></a></div>
         <div class="span3"><h1 class="logo"><a href="/"><span class="bet logo">BET</span><span class="time logo">TIME</span></a></h1></div>
+        <div class="span3 offset5"><p class="ident"><a href="/login">Sign in</a> / <a href="/user/account/registration">Registration</a></p></div>
+
       </div>
       <div class="row">
           <div class="span3 offset1"><h2 class="slogan">it's time to make a bet</h2></div>
@@ -67,10 +69,12 @@
             </table>
 
             </div>
-             <div id="summary">No tips selected</div>
+             <div id="summary"></div>
 
-
+            <?php if (Yii::app()->user->isAuthenticated())
+{?>
              	<input type='image' name='paypal_submit' id='paypal_submit'  src='https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif' border='0' align='top' alt='Pay with PayPal'/>
+<?php } else {?> <p class="ident">Please, <a href="/user/account/registration">register</a> or <a href="/login">sign in</a> to buy tips</p>  <?php } ?>
              </form>
              <div class="framebottom"><img src="/img/blank.gif" width="1" height="13"></div>
              </div>

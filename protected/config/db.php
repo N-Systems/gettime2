@@ -11,7 +11,7 @@
   'charset' => 'utf8',
   'enableParamLogging' => 1,
   'enableProfiling' => 1,
-  'schemaCachingDuration' => 0,
+  'schemaCachingDuration' => 90000,
   'tablePrefix' => '',
  'initSQLs'=>array('set LOCAL time_zone="+0:00"','set time_zone="+0:00"'),
 

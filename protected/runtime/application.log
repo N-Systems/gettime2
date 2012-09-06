@@ -1300,3 +1300,1283 @@ Stack trace:
 REQUEST_URI=/paypal/EC-34Y18544S0171472K
 HTTP_REFERER=http://bet.rus:8080/
 ---
+2012/08/30 22:10:58 [info] [application] $_POST=array (
+  'paypal_submit_x' => '0',
+  'paypal_submit_y' => '0',
+)
+2012/08/30 22:10:58 [error] [php] Undefined variable: items (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:26)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/30 22:22:05 [info] [application] $_POST=array (
+  'paypal_submit_x' => '67',
+  'paypal_submit_y' => '24',
+)
+2012/08/30 22:22:05 [error] [php] Undefined variable: items (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:26)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/30 22:22:19 [info] [application] $_POST=array (
+  'paypal_submit_x' => '67',
+  'paypal_submit_y' => '24',
+)
+2012/08/30 22:22:19 [error] [php] Undefined variable: items (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:26)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/30 22:22:44 [info] [application] $_POST=array (
+  'paypal_submit_x' => '76',
+  'paypal_submit_y' => '20',
+)
+2012/08/30 22:22:44 [error] [php] Undefined variable: items (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:26)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/30 22:29:51 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '3',
+  ),
+  'paypal_submit_x' => '0',
+  'paypal_submit_y' => '0',
+)
+2012/08/30 22:29:52 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:104)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/30 22:30:45 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '113',
+  'paypal_submit_y' => '7',
+)
+2012/08/30 22:30:45 [error] [php] Undefined index: ACK (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:104)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/08/30 22:42:27 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/08/30 22:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blank.gif".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('blank.gif')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/blank.gif
+---
+2012/08/31 11:33:05 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+  ),
+  'paypal_submit_x' => '0',
+  'paypal_submit_y' => '0',
+)
+2012/08/31 11:33:07 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:26) (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:280)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+2012/09/03 20:13:16 [info] [application] [4df8824827ac8a1ae82270c548328a65][admin][83] User: admin (ID: 83)
+
+$_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => '123456',
+  ),
+  'yt0' => 'Войти',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => '76a414204db43ac0782e73905b66ec99',
+)
+2012/09/03 20:13:17 [info] [application.modules.user] [4df8824827ac8a1ae82270c548328a65][admin][83] Пользователь admin@admin.ru авторизовался!
+2012/09/03 20:25:08 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+  ),
+  'paypal_submit_x' => '82',
+  'paypal_submit_y' => '12',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => '4df8824827ac8a1ae82270c548328a65',
+)
+2012/09/03 20:25:11 [error] [exception.CException] exception 'CException' with message 'Property "OrderController.ErrorLongMsg" is not defined.' in /Users/denisvolkov/github/local/bettime/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/protected/modules/order/views/order/paypal_payment_failed.php(4): CComponent->__get('ErrorLongMsg')
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', NULL, true)
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(870): CBaseController->renderFile('/Users/denisvol...', NULL, true)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(783): CController->renderPartial('paypal_payment_...', NULL, true)
+#5 /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php(117): CController->render('paypal_payment_...')
+#6 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#14 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/04 19:58:10 [info] [application] [ee9e3b14869e28e2e6717e7af77f1206][yiier][yiier] User: yiier (ID: yiier)
+
+$_POST=array (
+  'CrudCode' => 
+  array (
+    'model' => 'protected.modules.order.paypalorder',
+    'controller' => 'paypalorder',
+    'baseControllerClass' => 'YBackController',
+    'template' => 'default',
+  ),
+  'preview' => 'Preview',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/04 19:58:10 [error] [exception.CException] [ee9e3b14869e28e2e6717e7af77f1206][yiier][yiier] exception 'CException' with message 'Alias "protected.modules.order.paypalorder" is invalid. Make sure it points to an existing directory or file.' in /Users/denisvolkov/github/local/bettime/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('protected.modul...', true)
+#1 /Users/denisvolkov/github/local/bettime/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /Users/denisvolkov/github/local/bettime/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#5 /Users/denisvolkov/github/local/bettime/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('')
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/gii/crud
+HTTP_REFERER=http://bet.rus:8080/index.php/gii/crud
+---
+2012/09/04 19:58:35 [info] [application] [ee9e3b14869e28e2e6717e7af77f1206][yiier][yiier] User: yiier (ID: yiier)
+
+$_POST=array (
+  'CrudCode' => 
+  array (
+    'model' => 'application.modules.order.paypalorder',
+    'controller' => 'paypalorder',
+    'baseControllerClass' => 'YBackController',
+    'template' => 'default',
+  ),
+  'preview' => 'Preview',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/04 19:58:35 [error] [exception.CException] [ee9e3b14869e28e2e6717e7af77f1206][yiier][yiier] exception 'CException' with message 'Alias "application.modules.order.paypalorder" is invalid. Make sure it points to an existing PHP file.' in /Users/denisvolkov/github/local/bettime/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 /Users/denisvolkov/github/local/bettime/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /Users/denisvolkov/github/local/bettime/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#5 /Users/denisvolkov/github/local/bettime/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('')
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/gii/crud
+HTTP_REFERER=http://bet.rus:8080/index.php/gii/crud
+---
+2012/09/04 20:04:16 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/04 20:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "PaypalOrders".' in /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('PaypalOrders')
+#1 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/PaypalOrders
+HTTP_REFERER=http://bet.rus:8080/index.php/gii/crud
+---
+2012/09/04 22:32:00 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+  ),
+  'paypal_submit_x' => '107',
+  'paypal_submit_y' => '10',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/04 22:32:00 [error] [exception.CException] exception 'CException' with message 'Property "OrderModule.price_for_2_tip" is not defined.' in /Users/denisvolkov/github/local/bettime/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(106): CComponent->__get('price_for_2_tip')
+#1 /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php(15): CModule->__get('price_for_2_tip')
+#2 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#8 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/04 22:55:14 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+  ),
+  'paypal_submit_x' => '74',
+  'paypal_submit_y' => '8',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/04 22:55:16 [error] [exception.CDbException] exception 'CDbException' with message 'Something wrong' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:100
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/04 22:56:21 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+  ),
+  'paypal_submit_x' => '74',
+  'paypal_submit_y' => '2',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/04 22:56:24 [error] [exception.CDbException] exception 'CDbException' with message 'Something wrong' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:100
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 09:47:09 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/09/05 09:47:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+---
+2012/09/05 09:47:15 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/09/05 09:47:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 09:50:31 [info] [application] $_POST=array (
+  'paypal_submit_x' => '112',
+  'paypal_submit_y' => '26',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/09/05 09:50:31 [error] [php] Undefined index: tip (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:25)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (25)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 09:50:31 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/09/05 09:50:32 [error] [php] Undefined index: tip (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:25)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (25)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 09:50:47 [info] [application] $_POST=array (
+  'paypal_submit_x' => '75',
+  'paypal_submit_y' => '26',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/09/05 09:50:47 [error] [php] Undefined index: tip (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:25)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (25)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 09:50:48 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'e53b047553ad2482ff48e0192e9e08e3',
+)
+2012/09/05 09:50:48 [error] [php] Undefined index: tip (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:25)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (25)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:01:10 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+    2 => 'Betting tip: #3',
+  ),
+  'paypal_submit_x' => '89',
+  'paypal_submit_y' => '0',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:01:12 [error] [exception.CDbException] exception 'CDbException' with message 'Transaction refused because of an invalid argument. See additional error messages for details.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:104
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:01:59 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+    2 => 'Betting tip: #3',
+  ),
+  'paypal_submit_x' => '89',
+  'paypal_submit_y' => '0',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:02:02 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:104
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:03:53 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+    2 => 'Betting tip: #3',
+  ),
+  'paypal_submit_x' => '89',
+  'paypal_submit_y' => '0',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:03:55 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:105
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:06:17 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+    2 => 'Betting tip: #3',
+  ),
+  'paypal_submit_x' => '89',
+  'paypal_submit_y' => '0',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:06:18 [error] [php] Undefined variable: items (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:41)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (41)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:06:47 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+    2 => 'Betting tip: #3',
+  ),
+  'paypal_submit_x' => '41',
+  'paypal_submit_y' => '10',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:06:47 [error] [php] Undefined variable: items (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:43)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (43)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:08:53 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+    2 => 'Betting tip: #3',
+  ),
+  'paypal_submit_x' => '41',
+  'paypal_submit_y' => '10',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:08:53 [error] [php] Uninitialized string offset: 0 (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:91)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php (91)
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (66)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:10:29 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => 'Betting tip: #1',
+    1 => 'Betting tip: #2',
+    2 => 'Betting tip: #3',
+  ),
+  'paypal_submit_x' => '127',
+  'paypal_submit_y' => '7',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:10:30 [error] [php] Uninitialized string offset: 0 (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:91)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php (91)
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (66)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:44:37 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+  ),
+  'paypal_submit_x' => '88',
+  'paypal_submit_y' => '13',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:44:37 [error] [php] Uninitialized string offset: 0 (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:91)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php (91)
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (66)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:46:23 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '94',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:46:23 [error] [php] Uninitialized string offset: 0 (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:91)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php (91)
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (66)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:47:03 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '94',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:47:03 [error] [php] Uninitialized string offset: 0 (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:91)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php (91)
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (65)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:47:33 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '94',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:47:34 [error] [php] Use of undefined constant nil - assumed 'nil' (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:20)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (20)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 10:47:53 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '94',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:47:55 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:107
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:49:38 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '94',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:49:41 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:107
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:50:41 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '94',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:50:43 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:107
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:51:28 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '94',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:51:30 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:107
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:53:02 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '93',
+  'paypal_submit_y' => '17',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:53:05 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:107
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:54:39 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '74',
+  'paypal_submit_y' => '14',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:54:42 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:107
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:55:27 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '74',
+  'paypal_submit_y' => '14',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:55:29 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:107
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:56:40 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '74',
+  'paypal_submit_y' => '14',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:56:42 [error] [exception.CDbException] exception 'CDbException' with message 'The totals of the cart item amounts do not match order amounts.' in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:111
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('paypalcheckout')
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('order/order/pay...')
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#8 {main}
+REQUEST_URI=/paypal/checkout
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 10:57:46 [info] [application] $_POST=array (
+  'tip' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '3',
+  ),
+  'paypal_submit_x' => '74',
+  'paypal_submit_y' => '14',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 10:57:48 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php:17) (/Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php:280)
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): OrderController->actionPaypalCheckout()
+#1 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): OrderController->runAction()
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): OrderController->runActionWithFilters()
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): OrderController->run()
+#5 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/denisvolkov/github/local/bettime/index.php(20): CWebApplication->run()
+REQUEST_URI=/paypal/checkout
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/paypalfunctions.php (280)
+in /Users/denisvolkov/github/local/bettime/protected/modules/order/controllers/OrderController.php (84)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 11:23:38 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 11:23:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 11:23:44 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 11:23:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 11:23:46 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 11:23:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 11:25:20 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 11:25:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000]: Syntax error or access violation: 1227 Access denied; you need the SUPER privilege for this operation' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://bet.rus:8080/
+---
+2012/09/05 16:37:16 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 16:37:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2005] Unknown MySQL server host 'external-db.s130213.gridserver.com' (1)' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+---
+2012/09/05 17:09:34 [info] [application] $_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => '123456',
+  ),
+  'yt0' => 'Войти',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 17:09:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/user/UserModule.php(136): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): UserModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('user', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'user', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(270): CWebApplication->createController('user/account/lo...')
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('user/account/lo...')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/login
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---
+2012/09/05 17:09:40 [info] [application] $_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'admin@admin.ru',
+    'password' => '123456',
+  ),
+  'yt0' => 'Войти',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 17:09:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/user/UserModule.php(136): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): UserModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('user', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'user', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(270): CWebApplication->createController('user/account/lo...')
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('user/account/lo...')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/login
+HTTP_REFERER=http://bet.rus:8080/index.php/login
+---
+2012/09/05 18:23:33 [info] [application] $_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 18:23:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 61' in /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Users/denisvolkov/github/local/bettime/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Users/denisvolkov/github/local/bettime/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Settings))
+#7 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/models/Settings.php(26): CActiveRecord::model('Settings')
+#8 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/components/YWebModule.php(194): Settings::model()
+#9 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/YupeModule.php(138): YWebModule->init()
+#10 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(91): YupeModule->init()
+#11 /Users/denisvolkov/github/local/bettime/framework/YiiBase.php(208): CModule->__construct('yupe', NULL, Array)
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CModule.php(283): YiiBase::createComponent('application.mod...', 'yupe', NULL, Array)
+#13 /Users/denisvolkov/github/local/bettime/protected/modules/yupe/controllers/YFrontController.php(18): CModule->getModule('yupe')
+#14 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(275): YFrontController->init()
+#15 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#16 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+---
+2012/09/05 18:25:03 [info] [application] [ee9e3b14869e28e2e6717e7af77f1206][Guest][] User: Guest (ID: )
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 18:25:12 [error] [exception.CException] [ee9e3b14869e28e2e6717e7af77f1206][Guest][] exception 'CException' with message 'YWebUser and its behaviors do not have a method or closure named "isAuthentificated".' in /Users/denisvolkov/github/local/bettime/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('isAuthentificat...', Array)
+#1 /Users/denisvolkov/github/local/bettime/themes/nsystems/views/layouts/main.php(72): YWebUser->isAuthentificated()
+#2 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(127): require('/Users/denisvol...')
+#3 /Users/denisvolkov/github/local/bettime/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/denisvol...', Array, true)
+#4 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(785): CBaseController->renderFile('/Users/denisvol...', Array, true)
+#5 /Users/denisvolkov/github/local/bettime/protected/controllers/SiteController.php(29): CController->render('index', Array)
+#6 /Users/denisvolkov/github/local/bettime/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#7 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Users/denisvolkov/github/local/bettime/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(276): CController->run('index')
+#11 /Users/denisvolkov/github/local/bettime/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#12 /Users/denisvolkov/github/local/bettime/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/denisvolkov/github/local/bettime/index.php(20): CApplication->run()
+#14 {main}
+REQUEST_URI=/
+---
+2012/09/05 18:26:34 [info] [application] [29a445a9c7c53549848bbff6b837d113][Denis][84] User: Denis (ID: 84)
+
+$_POST=array (
+  'LoginForm' => 
+  array (
+    'email' => 'to-denis@yandex.ru',
+    'password' => 'gbp13ltw',
+  ),
+  'yt0' => 'Login',
+)
+
+$_COOKIE=array (
+  'PHPSESSID' => 'ee9e3b14869e28e2e6717e7af77f1206',
+)
+2012/09/05 18:26:39 [info] [application.modules.user] [29a445a9c7c53549848bbff6b837d113][Denis][84] User to-denis@yandex.ru authorized!
+in /Users/denisvolkov/github/local/bettime/protected/modules/user/controllers/account/LoginAction.php (16)
+in /Users/denisvolkov/github/local/bettime/index.php (20)
+2012/09/05 19:10:49 [info] [application] [Guest][] User: Guest (ID: )
+
+$_COOKIE=array (
+  'PHPSESSID' => '29a445a9c7c53549848bbff6b837d113',
+)
+2012/09/05 19:10:53 [info] [application.modules.user] [Guest][] Пользователь Denis вышел!
+in /Users/denisvolkov/github/local/bettime/protected/modules/user/controllers/account/LogOutAction.php (6)
+in /Users/denisvolkov/github/local/bettime/index.php (20)

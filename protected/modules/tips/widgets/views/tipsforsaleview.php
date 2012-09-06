@@ -1,6 +1,6 @@
 <?php if(empty($tips)):?>
     <tr style="height: 10px;">
-        <td colspan="5"><h2>No more betting tips today. Please come back tomorrow!</h2></td>
+        <td colspan="5"><h2>Betting tips will be ready before 12:00(UTC-0) today </h2></td>
     </tr>
 <?php endif;?>
 <script type="text/javascript">

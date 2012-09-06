@@ -1,8 +1,8 @@
-<?php $this->pageTitle = Yii::t('user', 'Авторизация'); ?>
+<?php $this->pageTitle = Yii::t('user', 'Authorization'); ?>
 
 <?php Yii::app()->clientScript->registerScriptFile('http://connect.facebook.net/ru_RU/all.js'); ?>
 
-<h1>Авторизация</h1>
+<h1>Authorization</h1>
 
 <?php $this->widget('application.modules.yupe.widgets.YFlashMessages'); ?>
 
@@ -29,13 +29,13 @@
 
     <div class="row">
         <p class="hint">
-            <?php echo CHtml::link(Yii::t('user', "Регистрация"), array('/user/account/registration')); ?>
-            | <?php echo CHtml::link(Yii::t('user', "Восстановление пароля"), array('/user/account/recovery')) ?>
+            <?php echo CHtml::link(Yii::t('user', "Registration"), array('/user/account/registration')); ?>
+            | <?php echo CHtml::link(Yii::t('user', "Password Recovery"), array('/user/account/recovery')) ?>
         </p>
     </div>
 
     <div class="row submit">
-        <?php echo CHtml::submitButton('Войти'); ?>
+        <?php echo CHtml::submitButton('Login'); ?>
     </div>
 
     <?php $this->endWidget(); ?>

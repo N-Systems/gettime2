@@ -2,17 +2,205 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39c7785d-cce2-4e79-9a84-2488495eb7fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/order/views/order/paypal_pending.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cssxfire.xml" afterPath="$PROJECT_DIR$/.idea/cssxfire.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/1e19c147/pager.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/css/bootstrap-yii.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/less/bootstrap-yii.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/37c04664/less/bootstrap-yii.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/autocomplete/indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/autocomplete/jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/css/base/jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/js/jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/jui/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/rating/delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/rating/jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/rating/star.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/file.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/images/treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/treeview/jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/38dce0f2/yiitab/jquery.yiitab.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/4ee5eafc/css/auth.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/4ee5eafc/images/auth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/4ee5eafc/js/auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/detailview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/jquery.yiigridview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/update.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/gridview/view.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/listview/down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/listview/jquery.yiilistview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/listview/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/listview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64369748/listview/up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/79c49716/css/auth.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/79c49716/images/auth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/79c49716/js/auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/detailview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/jquery.yiigridview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/update.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/gridview/view.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/listview/down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/listview/jquery.yiilistview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/listview/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/listview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/aa24469b/listview/up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/css/bootstrap-yii.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/less/bootstrap-yii.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b5ebf39/less/bootstrap-yii.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c1a30212/css/auth.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c1a30212/images/auth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c1a30212/js/auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/blank.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/blank[Конфликт].css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/editor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/redactor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/writer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/writer[Конфликт].css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/wym.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/css/wym[Конфликт].css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/bg_toolbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/avi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/csv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/doc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/gif.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/html.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/jpg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/mov.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/other.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/png.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/ppt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/rar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/rtf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/txt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/xls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/fileicons/zip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/resizer.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/resizer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/separator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/i/video_box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/langs/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/langs/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/langs/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/langs/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/langs/pt_br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/langs/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/langs/ua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/plugins/file.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/plugins/file_edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/plugins/image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/plugins/image_edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/plugins/link.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/plugins/table.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/plugins/video.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/redactor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/redactor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/toolbars/air.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/toolbars/classic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/toolbars/custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/toolbars/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/toolbars/mini.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/c70af68e/toolbars/original.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cc31ea4c/highlight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d00b1094/pager.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/e68e4324/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/assets/e68e4324/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/db.php" afterPath="$PROJECT_DIR$/protected/config/db.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/order/controllers/OrderController.php" afterPath="$PROJECT_DIR$/protected/modules/order/controllers/OrderController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/order/views/order/paypal_show_bought_tips.php" afterPath="$PROJECT_DIR$/protected/modules/order/views/order/paypal_show_bought_tips.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsforsaleview.php" afterPath="$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsforsaleview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/user/controllers/account/LoginAction.php" afterPath="$PROJECT_DIR$/protected/modules/user/controllers/account/LoginAction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/user/views/people/_userinfo.php" afterPath="$PROJECT_DIR$/protected/modules/user/views/people/_userinfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/backend_bootstrap/extensions/bootstrap/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/themes/backend_bootstrap/extensions/bootstrap/assets/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/nsystems/css/style.css" afterPath="$PROJECT_DIR$/themes/nsystems/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/nsystems/views/layouts/main.php" afterPath="$PROJECT_DIR$/themes/nsystems/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/nsystems/views/user/account/login.php" afterPath="$PROJECT_DIR$/themes/nsystems/views/user/account/login.php" />
     </list>
     <ignored path="bettime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,10 +222,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="userInfo.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/user/views/people/userInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/user/models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,70 +243,52 @@
       <file leaf-file-name="tipsforsaleview.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsforsaleview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="96" selection-start="1326" selection-end="1326" vertical-scroll-proportion="-2.3461537">
+            <state line="2" column="74" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/order/controllers/OrderController.php">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/nsystems/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="39" selection-start="11138" selection-end="11138" vertical-scroll-proportion="-3.7307692">
+            <state line="31" column="140" selection-start="1802" selection-end="1802" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.min.css">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/nsystems/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2317" column="20" selection-start="41401" selection-end="41401" vertical-scroll-proportion="0.22591944">
+            <state line="81" column="28" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-3.3442624">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tipsarchive.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsarchive.php">
+      <file leaf-file-name="YWebUser.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/user/components/YWebUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="919" vertical-scroll-proportion="-0.0">
+            <state line="28" column="35" selection-start="811" selection-end="826" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paypal_pending.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/order/views/order/paypal_pending.php">
+      <file leaf-file-name="AccountController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/user/controllers/AccountController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="72" selection-start="96" selection-end="96" vertical-scroll-proportion="-1.9615384">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/db.php">
+      <file leaf-file-name="RegistrationAction.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/user/controllers/account/RegistrationAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tipsbymonth.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/tips/views/tips/tipsbymonth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="66" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-1.2307693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cannot_save_order.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/order/views/order/cannot_save_order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="11" selection-start="166" selection-end="469" vertical-scroll-proportion="-9.153846">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,22 +308,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/modules/order/views/order/paypal_payment_succesfull.php" />
-        <option value="$PROJECT_DIR$/protected/modules/order/OrderModule.php" />
-        <option value="$PROJECT_DIR$/protected/modules/order/views/order/empty_arguments.php" />
-        <option value="$PROJECT_DIR$/protected/modules/tips/models/Tips.php" />
-        <option value="$PROJECT_DIR$/protected/modules/tips/views/tips/tipsbymonth.php" />
-        <option value="$PROJECT_DIR$/protected/modules/tips/views/tips/bought_tips.php" />
         <option value="$PROJECT_DIR$/protected/modules/order/models/PaypalOrders.php" />
         <option value="$PROJECT_DIR$/protected/modules/order/views/order/paypal_cannot_find_order.php" />
         <option value="$PROJECT_DIR$/protected/modules/order/views/order/cannot_save_order.php" />
-        <option value="$PROJECT_DIR$/protected/config/db.php" />
         <option value="$PROJECT_DIR$/protected/modules/order/views/order/paypal_pending.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsforsaleview.php" />
         <option value="$PROJECT_DIR$/protected/modules/order/views/order/paypal_show_bought_tips.php" />
         <option value="$PROJECT_DIR$/protected/modules/order/controllers/OrderController.php" />
         <option value="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/themes/backend_bootstrap/extensions/bootstrap/assets/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/protected/modules/user/controllers/account/LoginAction.php" />
+        <option value="$PROJECT_DIR$/themes/nsystems/views/user/account/login.php" />
+        <option value="$PROJECT_DIR$/protected/modules/user/views/people/_userinfo.php" />
+        <option value="$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsforsaleview.php" />
+        <option value="$PROJECT_DIR$/protected/config/db.php" />
+        <option value="$PROJECT_DIR$/themes/nsystems/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/themes/nsystems/css/style.css" />
       </list>
     </option>
   </component>
@@ -230,7 +409,209 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsystems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsystems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="people" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsystems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsystems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsystems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nsystems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paypalOrder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,7 +651,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,11 +673,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="widgets" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recoveryPassword" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,11 +703,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="widgets" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="people" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -348,15 +759,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,33 +785,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,97 +811,145 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paypalOrders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bettime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -631,6 +1064,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bettime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -826,7 +1273,6 @@
     <frame x="60" y="22" width="1220" height="778" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -834,18 +1280,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27769348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21075085" sideWeight="0.72230655" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21075085" sideWeight="0.67223066" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32776934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -885,7 +1332,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="paypal&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="PayPal working - with only window. No email is sent to payer. Fixed fonts for records" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -902,119 +1349,92 @@
     <MESSAGE value="tring to intergratre paypal" />
     <MESSAGE value="Good markup of main page, records. Still have to test pyapal" />
     <MESSAGE value="paypal&#10;" />
+    <MESSAGE value="PayPal working - with only window. No email is sent to payer. Fixed fonts for records" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/modules/tips/views/tips/bought_tips.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/components/UserIdentity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/tips/models/Tips.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/blog/controllers/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="20" selection-start="2654" selection-end="2661" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="61" column="30" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/order/models/PaypalOrders.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/controllers/PeopleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="61" selection-start="5382" selection-end="5382" vertical-scroll-proportion="1.3417085">
-          <folding />
-        </state>
+        <state line="20" column="26" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/order/controllers/PaypalOrdersController.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/views/people/_userinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="-9.153846" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/order/views/order/cannot_save_order.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/views/people/_userinfoComments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="11" selection-start="166" selection-end="469" vertical-scroll-proportion="-9.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/tips/widgets/TipsForSale.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="42" selection-start="592" selection-end="616" vertical-scroll-proportion="0.13705584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsarchive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="919" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-12.984252" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/tips/views/tips/tipsbymonth.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/views/people/_userinfoTopics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="66" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-1.2307693">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="33" selection-start="471" selection-end="471" vertical-scroll-proportion="0.3622951" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/views/people/userInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/tips/widgets/views/tipsforsaleview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="96" selection-start="1326" selection-end="1326" vertical-scroll-proportion="-2.3461537">
+        <state line="2" column="74" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/components/YWebUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="35" selection-start="811" selection-end="826" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/user/controllers/account/RegistrationAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/nsystems/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="140" selection-start="1802" selection-end="1802" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/order/views/order/paypal_pending.php">
+    <entry file="file://$PROJECT_DIR$/themes/nsystems/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="72" selection-start="96" selection-end="96" vertical-scroll-proportion="-1.9615384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/order/views/order/paypal_show_bought_tips.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="133" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/order/controllers/OrderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="39" selection-start="11138" selection-end="11138" vertical-scroll-proportion="-3.7307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2317" column="20" selection-start="41401" selection-end="41401" vertical-scroll-proportion="0.22591944">
+        <state line="81" column="28" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-3.3442624">
           <folding />
         </state>
       </provider>

@@ -1283,7 +1283,7 @@ table {
 }
 
 .table th, .table td {
-    padding: 0px 3px 7px 9px;
+    padding: 2px 3px;
     line-height: 12px;
     text-align: left;
     vertical-align: middle;
