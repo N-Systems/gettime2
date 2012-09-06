@@ -26,7 +26,7 @@
     </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton(Yii::t('user', 'Search')); ?>
+        <?php echo CHtml::submitButton(Yii::t('user', 'Поиск')); ?>
     </div>
 
     <?php $this->endWidget(); ?>

@@ -1,11 +1,11 @@
-<?php $this->pageTitle = Yii::t('user', 'Change password'); ?>
+<?php $this->pageTitle = Yii::t('user', 'Сменя пароля'); ?>
 
-<h1>Password recovery</h1>
+<h1>Восстановление пароля</h1>
 
 <?php $this->widget('application.modules.yupe.widgets.YFlashMessages'); ?>
 
 
-<p>Please, enter you new password!</p>
+<p>Укажите свой новый пароль!</p>
 
 <div class="form">
     <?php $form = $this->beginWidget('CActiveForm'); ?>
@@ -24,7 +24,7 @@
 
 
     <div class="row submit">
-        <?php echo CHtml::submitButton('Change password'); ?>
+        <?php echo CHtml::submitButton('Изменить пароль'); ?>
     </div>
 
     <?php $this->endWidget(); ?>

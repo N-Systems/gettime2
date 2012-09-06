@@ -1,8 +1,6 @@
 <?php 
 class LoginAction extends CAction
 {
-    public $layout='//layouts/newspage';
-
     public function run()
     {
         $form = new LoginForm;
@@ -26,7 +24,7 @@ class LoginAction extends CAction
             else
                 Yii::log(Yii::t('user', 'Authorization error! email => {email}, Password => {password}!', array('{email}' => $form->email, '{password}' => $form->password)), CLogger::LEVEL_ERROR, UserModule::$logCategory);
         }
-        $this->controller->layout=$this->layout;
+
         $this->controller->render('login', array('model' => $form));
     }
 }

@@ -1,8 +1,8 @@
-<?php $this->pageTitle = Yii::t('user', 'Free user registration'); ?>
+<?php $this->pageTitle = Yii::t('user', 'Регистрация новго пользователя'); ?>
 
-<h1>Free user registration</h1>
+<h1>Регистрация нового пользователя</h1>
 
-<div class='hint'>Please provide your email and password.</div>
+<div class='hint'>Пожалуйста, имя пользователя и пароль заполняйте только латинскими буквами и цифрами.</div>
 
 <br/><br/>
 
@@ -49,7 +49,7 @@
                 <?php echo $form->error($model, 'verifyCode'); ?>
             </div>
             <div class="hint">
-                Enter security code from the image
+                Введите текст указанный на картинке
             </div>
         </div>
         <?php endif; ?>
@@ -58,9 +58,19 @@
 
 
     <div class="row submit">
-        <?php echo CHtml::submitButton('Register free now!'); ?>
+        <?php echo CHtml::submitButton('Зарегистрироваться'); ?>
     </div>
 
     <?php $this->endWidget(); ?>
 </div><!-- form -->
 
+<?php  $this->widget('application.modules.social.extensions.eauth.EAuthWidget',array('action' => '/social/social/login/'));?>
+
+<div style='float:left;'>
+    <div style='float:left;padding-right:5px'>
+        <?php $this->widget('application.modules.social.widgets.ysc.yandex.YandexShareApi', array(
+                                                                                                  'type' => 'button',
+                                                                                                  'services' => 'all'
+                                                                                             ));?>
+    </div>
+</div>

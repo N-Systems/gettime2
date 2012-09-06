@@ -10,15 +10,15 @@ class ChangePasswordForm extends CFormModel
         return array(
             array('password, cPassword', 'required'),
             array('password, cPassword', 'length', 'min' => Yii::app()->getModule('user')->minPasswordLength),
-            array('password', 'compare', 'compareAttribute' => 'cPassword', 'message' => Yii::t('user', 'Passwords dont match!'))
+            array('password', 'compare', 'compareAttribute' => 'cPassword', 'message' => Yii::t('user', 'Пароли не совпадают!'))
         );
     }
 
     public function attributeLabels()
     {
         return array(
-            'password'  => Yii::t('user', 'New password'),
-            'cPassword' => Yii::t('user', 'Repeat password'),
+            'password'  => Yii::t('user', 'Новый пароль'),
+            'cPassword' => Yii::t('user', 'Новый пароль еще раз'),
         );
     }
 }

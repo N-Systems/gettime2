@@ -5,7 +5,7 @@
                                                          'enableAjaxValidation' => false,
                                                     )); ?>
 
-    <p class="note"><?php echo Yii::t('user', 'Fields marked by *, are required')?></p>
+    <p class="note"><?php echo Yii::t('user', 'Поля, отмеченные * обязательны для заполнения')?></p>
 
     <?php echo $form->errorSummary($model); ?>
 
@@ -22,7 +22,7 @@
     </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton(Yii::t('user', 'Save')); ?>
+        <?php echo CHtml::submitButton(Yii::t('user', 'Сохранить')); ?>
     </div>
 
     <?php $this->endWidget(); ?>

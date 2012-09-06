@@ -1,11 +1,9 @@
 <?php
 class PeopleController extends YFrontController
 {
-    public $layout='//layouts/newspage';
     // Вывод публичной страницы всех пользователей
     public function actionIndex()
     {
-
         $dataProvider = new CActiveDataProvider('User', array(
              'criteria' => array(
                  'condition' => 'status = :status',
@@ -27,7 +25,7 @@ class PeopleController extends YFrontController
             : Yii::app()->user;
 
     	if ( !$user )
-			throw new CHttpException(404, Yii::t('people', 'User not found'));
+			throw new CHttpException(404, Yii::t('people', 'Пользователь не найден'));
 
     	$this->render('userInfo', array(
     	   'user' => $user,

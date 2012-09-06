@@ -1,14 +1,14 @@
 <section id='userinfo_about'>
-    <h2>Personal</h2>
+    <h2>Личное</h2>
     <dl>
-    	<dt>Gender:</dt>
+    	<dt>Пол:</dt>
     	<dd><?=$user->getGender();?></dd>
     <?php if($user->birth_date != '0000-00-00') { ?>
-    	<dt>Birth date:</dt>
+    	<dt>Дата рождения:</dt>
     	<dd><?=CHtml::encode($user->birth_date);?></dd>
     <?php } ?> 
     <?php if($user->about) { ?>
-    	<dt>About me:</dt>
+    	<dt>О себе:</dt>
     	<dd><?=CHtml::encode($user->about);?></dd>
     <?php } ?> 
     </dl>

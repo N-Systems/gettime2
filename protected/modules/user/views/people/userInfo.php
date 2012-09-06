@@ -1,7 +1,7 @@
 <?php
     $this->pageTitle = CHtml::encode($user->nick_name);
     $this->breadcrumbs = array(
-        Yii::t('user', 'Users') => array('people/'),
+        Yii::t('user', 'Пользователи') => array('people/'), 
         CHtml::encode($user->nick_name),
     );
 ?>
@@ -13,8 +13,8 @@
 	<?=$avatar?>
 	<h1><?=CHtml::encode($user->nick_name)?></h1>
 	<div class="fio"><?=CHtml::encode($user->fullName)?></div>
-
-	<div class="rate">Rating: &infin; &nbsp; power: &infin;</div>
+	<?php //:TODO: Требуется добавить вывод рейтинга и силы пользователя ?>
+	<div class="rate">Рейтинг: &infin; &nbsp; Сила: &infin;</div>
 </section>
 
 <?php
@@ -22,7 +22,7 @@
 	$commentsNum = 0;
 	$menu = array(
 		array(
-            'label' => Yii::t('people','About user'),
+            'label' => Yii::t('people','О пользователе'),
             'url' => array(
                 'people/userInfo',
                 'username' => $user->nick_name,
@@ -31,8 +31,8 @@
             'active' => !$mode
         ), array(
             'label' => $topicsNum
-                ? Yii::t('people','Favorite topics ({num})', array('num' => $topicsNum))
-                : Yii::t('people','Favorite topics'),
+                ? Yii::t('people','Избранные топики ({num})', array('num' => $topicsNum))
+                : Yii::t('people','Избранные топики'),
             'url' => array(
                 'people/userInfo',
                 'username' => $user->nick_name,
@@ -41,8 +41,8 @@
             'active' => $mode=="topics"
         ), array(
             'label' => $commentsNum
-                ? Yii::t('people','Favorite comments ({num})', array('num' => $commentsNum))
-                : Yii::t('people','Favorite comments'),
+                ? Yii::t('people','Избранные комментарии ({num})', array('num' => $commentsNum))
+                : Yii::t('people','Избранные комментарии'),
             'url' => array(
                 'people/userInfo',
                 'username' => $user->nick_name,

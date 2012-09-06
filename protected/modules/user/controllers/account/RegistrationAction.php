@@ -1,10 +1,8 @@
 <?php
 class RegistrationAction extends CAction
 {
-    public $layout='//layouts/newspage';
     public function run()
     {
-        $this->controller->layout=$this->layout;
         $form = new RegistrationForm;
 
         $module = Yii::app()->getModule('user');
@@ -54,27 +52,27 @@ class RegistrationAction extends CAction
                         {
                             // отправка email с просьбой активировать аккаунт
                             $mailBody = $this->controller->renderPartial('needAccountActivationEmail', array('model' => $user), true);
-                            Yii::app()->mail->send($module->notifyEmailFrom, $user->email, Yii::t('user', 'Registration on {site} !',array('{site}' => Yii::app()->name )), $mailBody);
+                            Yii::app()->mail->send($module->notifyEmailFrom, $user->email, Yii::t('user', 'Регистрация на сайте {site} !',array('{site}' => Yii::app()->name )), $mailBody);
                             // запись в лог о создании учетной записи
-                            Yii::log(Yii::t('user', "New account created: {nick_name}!", array('{nick_name}' => $user->nick_name)), CLogger::LEVEL_INFO, UserModule::$logCategory);
+                            Yii::log(Yii::t('user', "Создана учетная запись {nick_name}!", array('{nick_name}' => $user->nick_name)), CLogger::LEVEL_INFO, UserModule::$logCategory);
 
                             $transaction->commit();
 
-                            Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'New account created! Please, check your email!'));
+                            Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'Учетная запись создана! Проверьте Вашу почту!'));
                             $this->controller->redirect(array($module->registrationSucess));
                         }
                         else
                         {                           
                             $form->addErrors($registration->getErrors());
 
-                            Yii::log(Yii::t('user', "Error while creating new account!"), CLogger::LEVEL_ERROR, UserModule::$logCategory);
+                            Yii::log(Yii::t('user', "Ошибка при создании  учетной записи!"), CLogger::LEVEL_ERROR, UserModule::$logCategory);     
                         }
                     }
                     catch(Exception $e)
                     {
                         $transaction->rollback();
                         
-                        $form->addError('',Yii::t('user','Error while creating new account!'));
+                        $form->addError('',Yii::t('user','При создании учетной записи произошла ошибка!'));
                     }
                 }
                 else
@@ -86,14 +84,14 @@ class RegistrationAction extends CAction
 
                     if ($user && !$user->hasErrors())
                     {
-                        Yii::log(Yii::t('user', "A new account created: {nick_name} without activation!", array('{nick_name}' => $user->nick_name)), CLogger::LEVEL_INFO, UserModule::$logCategory);
+                        Yii::log(Yii::t('user', "Создана учетная запись {nick_name} без активации!", array('{nick_name}' => $user->nick_name)), CLogger::LEVEL_INFO, UserModule::$logCategory);
 
                         // отправить email с сообщением о успешной регистрации
                         $emailBody = $this->controller->renderPartial('accountCreatedEmail', array('model' => $user), true);
 
-                        Yii::app()->mail->send($module->notifyEmailFrom, $user->email, Yii::t('user', 'Registration on {site} !', array('{site}' => Yii::app()->name)), $emailBody);
+                        Yii::app()->mail->send($module->notifyEmailFrom, $user->email, Yii::t('user', 'Регистрация на сайте {site} !', array('{site}' => Yii::app()->name)), $emailBody);
 
-                        Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'Account created, please Sign in now!'));
+                        Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'Учетная запись создана! Пожалуйста, авторизуйтесь!'));
 
                         $this->controller->redirect(array($module->registrationSucess));
                     }
@@ -101,7 +99,7 @@ class RegistrationAction extends CAction
                     {
                         $form->addErrors($user->getErrors());
 
-                        Yii::log(Yii::t('user', "Error while creating site without registration!"), CLogger::LEVEL_ERROR, UserModule::$logCategory);
+                        Yii::log(Yii::t('user', "Ошибка при создании  учетной записи без активации!"), CLogger::LEVEL_ERROR, UserModule::$logCategory);
                     }                                       
                 }
             }

@@ -5,7 +5,6 @@ class RecoveryPasswordController extends YBackController
      * @var CActiveRecord the currently loaded data model instance.
      */
     private $_model;
-    public $layout='//layouts/newspage';
 
     /**
      * Displays a particular model.
