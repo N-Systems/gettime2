@@ -23,12 +23,12 @@ class RegistrationForm extends CFormModel
             array('nick_name, email, password, cPassword', 'required'),
             array('nick_name, email', 'length', 'max' => 50),                        
             array('password, cPassword', 'length', 'min' => $module->minPasswordLength),
-            array('nick_name','match','pattern' => '/^[A-Za-z0-9]{2,50}$/','message' => Yii::t('user','Неверный формат поля "{attribute}" допустимы только буквы и цифры, от 2 до 20 символов')),
+            array('nick_name','match','pattern' => '/^[A-Za-z0-9]{2,50}$/','message' => Yii::t('user','Invalid format "{attribute}" only letters and numbers allowed, from 2 to 20 symbols')),
             array('nick_name','checkNickName'),
-            array('password', 'compare', 'compareAttribute' => 'cPassword', 'message' => Yii::t('user', 'Пароли не совпадают.')),
+            array('password', 'compare', 'compareAttribute' => 'cPassword', 'message' => Yii::t('user', 'Passwords dont match.')),
             array('email','email'),                                    
             array('email','checkEmail'),
-            array('verifyCode', 'YRequiredValidator', 'allowEmpty' => !$module->showCaptcha,'message' => Yii::t('user','Код проверки не корректен.')),
+            array('verifyCode', 'YRequiredValidator', 'allowEmpty' => !$module->showCaptcha,'message' => Yii::t('user','Security code is incorrect.')),
             array('verifyCode', 'captcha', 'allowEmpty' => !$module->showCaptcha),            
         );
     }
@@ -40,7 +40,7 @@ class RegistrationForm extends CFormModel
         ));
 
         if($model)        
-            $this->addError('nick_name',Yii::t('user','Ник уже занят'));
+            $this->addError('nick_name',Yii::t('user','Nickname is busy'));
     }
 
     public function checkEmail($attribute,$params)
@@ -50,17 +50,17 @@ class RegistrationForm extends CFormModel
         ));
 
         if($model)        
-            $this->addError('email',Yii::t('user','Email уже занят'));   
+            $this->addError('email',Yii::t('user','Email is busy'));
     }
 
     public function attributeLabels()
     {
         return array(
-            'nick_name' => Yii::t('user', 'Имя пользователя'),
+            'nick_name' => Yii::t('user', 'Nickname'),
             'email' => Yii::t('user', 'Email'),
-            'password' => Yii::t('user', 'Пароль'),
-            'cPassword' => Yii::t('user', 'Подтверждение пароля'),
-            'verifyCode' => Yii::t('user', 'Код проверки'),            
+            'password' => Yii::t('user', 'Password'),
+            'cPassword' => Yii::t('user', 'Confirm password'),
+            'verifyCode' => Yii::t('user', 'Security code'),
         );
     }
 }

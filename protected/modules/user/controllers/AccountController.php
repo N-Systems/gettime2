@@ -1,8 +1,11 @@
 <?php
 class AccountController extends YFrontController
 {
+    public $layout='//layouts/newspage';
+
     public function actions()
     {
+
         return array(
             'captcha' => array(
                 'class' => 'CCaptchaAction',

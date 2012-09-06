@@ -2,14 +2,16 @@
 class RecoveryPasswordAction extends CAction
 {
     //сброс пароля
+    public $layout='//layouts/newspage';
     public function run($code)
-    {            
+    {
+        $this->controller->layout=$this->layout;
         $recovery = RecoveryPassword::model()->with('user')->find('code = :code', array(':code' => $code));
 
         if (!$recovery)
         {
-            Yii::log(Yii::t('user', 'Код восстановления пароля {code} не найден!', array('{code}' => $code)), CLogger::LEVEL_ERROR, UserModule::$logCategory);
-            Yii::app()->user->setFlash(YFlashMessages::ERROR_MESSAGE, Yii::t('user', 'Код восстановления пароля не найден! Попробуйте еще раз!'));
+            Yii::log(Yii::t('user', 'Recovery code {code} not found!', array('{code}' => $code)), CLogger::LEVEL_ERROR, UserModule::$logCategory);
+            Yii::app()->user->setFlash(YFlashMessages::ERROR_MESSAGE, Yii::t('user', 'Recovery code not found! Try again later'));
             $this->controller->redirect(array('/user/account/recovery'));
         }
 
@@ -25,17 +27,17 @@ class RecoveryPasswordAction extends CAction
                 {
                     $transaction->commit();
                     $emailBody = $this->controller->renderPartial('passwordAutoRecoverySuccessEmail', array('model' => $recovery->user, 'password' => $newPassword), true);
-                    Yii::app()->mail->send(Yii::app()->getModule('user')->notifyEmailFrom, $recovery->user->email, Yii::t('user', 'Успешное восстановление пароля!'), $emailBody);
-                    Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'Новый пароль отправлен Вам на email!'));
-                    Yii::log(Yii::t('user', 'Успешное восстановление пароля!'), CLogger::LEVEL_ERROR, UserModule::$logCategory);
+                    Yii::app()->mail->send(Yii::app()->getModule('user')->notifyEmailFrom, $recovery->user->email, Yii::t('user', 'Successfull password recovery!'), $emailBody);
+                    Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'New password is emailed to you!'));
+                    Yii::log(Yii::t('user', 'Successfull password recovery!'), CLogger::LEVEL_ERROR, UserModule::$logCategory);
                     $this->controller->redirect(array('/user/account/login'));
                 }
             }
             catch (CDbException $e)
             {
                 $transaction->rollback();
-                Yii::app()->user->setFlash(YFlashMessages::ERROR_MESSAGE, Yii::t('user', 'Ошибка при смене пароля!'));
-                Yii::log(Yii::t('user', 'Ошибка при автоматической смене пароля {error}!', array('{error}' => $e->getMessage())), CLogger::LEVEL_ERROR, UserModule::$logCategory);
+                Yii::app()->user->setFlash(YFlashMessages::ERROR_MESSAGE, Yii::t('user', 'Error when changing password!'));
+                Yii::log(Yii::t('user', 'Error while changing password {error}!', array('{error}' => $e->getMessage())), CLogger::LEVEL_ERROR, UserModule::$logCategory);
                 $this->controller->redirect(array('/user/account/recovery'));
             }
         }
@@ -61,18 +63,18 @@ class RecoveryPasswordAction extends CAction
                     if ($recovery->user->save() && RecoveryPassword::model()->deleteAll('user_id = :user_id', array(':user_id' => $recovery->user->id)))
                     {
                         $transaction->commit();
-                        Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'Пароль изменен!'));
-                        Yii::log(Yii::t('user', 'Успешная смена пароля для пользоателя {user}!', array('{user}' => $recovery->user->id)), CLogger::LEVEL_INFO, UserModule::$logCategory);
+                        Yii::app()->user->setFlash(YFlashMessages::NOTICE_MESSAGE, Yii::t('user', 'Password changed!'));
+                        Yii::log(Yii::t('user', 'Password changed for user: {user}!', array('{user}' => $recovery->user->id)), CLogger::LEVEL_INFO, UserModule::$logCategory);
                         $emailBody = $this->controller->renderPartial('passwordRecoverySuccessEmail', array('model' => $recovery->user), true);
-                        Yii::app()->mail->send(Yii::app()->getModule('user')->notifyEmailFrom, $recovery->user->email, Yii::t('user', 'Успешное восстановление пароля!'), $emailBody);
+                        Yii::app()->mail->send(Yii::app()->getModule('user')->notifyEmailFrom, $recovery->user->email, Yii::t('user', 'Successfull password recovery'), $emailBody);
                         $this->controller->redirect(array('/user/account/login'));
                     }
                 }
                 catch (CDbException $e)
                 {
                     $transaction->rollback();
-                    Yii::app()->user->setFlash(YFlashMessages::ERROR_MESSAGE, Yii::t('user', 'Ошибка при смене пароля!'));
-                    Yii::log(Yii::t('Ошибка при смене пароля {error}!', array('{error}' => $e->getMessage())), CLogger::LEVEL_ERROR, UserModule::$logCategory);
+                    Yii::app()->user->setFlash(YFlashMessages::ERROR_MESSAGE, Yii::t('user', 'Error while changing password!'));
+                    Yii::log(Yii::t('Error while changing password {error}!', array('{error}' => $e->getMessage())), CLogger::LEVEL_ERROR, UserModule::$logCategory);
                     $this->controller->redirect(array('/user/account/recovery'));
                 }
             }

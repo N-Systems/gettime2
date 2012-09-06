@@ -1,11 +1,11 @@
-<?php $this->pageTitle = Yii::t('user', 'Восстановление пароля'); ?>
+<?php $this->pageTitle = Yii::t('user', 'Password Recovery'); ?>
 
-<h1>Восстановление пароля</h1>
+<h1>Password Recovery</h1>
 
 <?php $this->widget('application.modules.yupe.widgets.YFlashMessages'); ?>
 
 
-<p>Для восстановления пароля - введите email, указанный при регистрации.</p>
+<p>To recover your password, please enter your email.</p>
 
 <div class="form">
     <?php $form = $this->beginWidget('CActiveForm', array(
@@ -22,7 +22,7 @@
     </div>
 
     <div class="row submit">
-        <?php echo CHtml::submitButton('Восстановить пароль'); ?>
+        <?php echo CHtml::submitButton('recover my password'); ?>
     </div>
 
     <?php $this->endWidget(); ?>
