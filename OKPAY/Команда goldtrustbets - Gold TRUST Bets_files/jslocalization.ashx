@@ -1,1 +1,0 @@
-var JavascriptLocalization = {"PaymentsAcceptor":{"AmountAfterLogging":"После попадания в платежную систему вы должны будете оплатить","StartingPrice":"Начальная цена","Total":"Итого","Quantity":"Количество"}};
